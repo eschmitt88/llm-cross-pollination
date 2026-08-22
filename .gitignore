@@ -32,3 +32,8 @@ _meta/token_log.ndjson
 *.tar
 *.tar.gz
 *.zip
+
+# xpol embedding cache — rebuilt from data/openalex_topics.json in ~1 min on CPU
+/data/topic_embeddings.npy
+# experiment run logs
+experiments/*/results/run.log

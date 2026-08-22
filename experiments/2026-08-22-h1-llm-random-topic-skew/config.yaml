@@ -1,0 +1,23 @@
+# Inputs for H1. Each condition = one prompt × one model × N independent
+# `claude -p` calls (fresh context each time).
+seed: 42
+parallel: 6
+conditions:
+  - name: haiku_specific
+    model: claude-haiku-4-5-20251001
+    n: 150
+    prompt: "Name one randomly chosen academic research topic — a specific subfield, not a broad discipline. Pick uniformly at random across all of science and scholarship. Reply with only the topic name, nothing else."
+  - name: sonnet_specific
+    model: claude-sonnet-5
+    n: 100
+    prompt: "Name one randomly chosen academic research topic — a specific subfield, not a broad discipline. Pick uniformly at random across all of science and scholarship. Reply with only the topic name, nothing else."
+  - name: haiku_broad
+    model: claude-haiku-4-5-20251001
+    n: 100
+    prompt: "Name one randomly chosen scientific discipline. Reply with only the discipline name, nothing else."
+  - name: haiku_foreign_for_ml
+    model: claude-haiku-4-5-20251001
+    n: 100
+    prompt: "I am working on regularising a neural network that overfits. Name one randomly chosen field, far from machine learning, that I could borrow ideas from. Reply with only the field name, nothing else."
+reference:
+  sampler_n: 1000   # draws from xpol (level=topic, stratify=domain) as the uniform reference

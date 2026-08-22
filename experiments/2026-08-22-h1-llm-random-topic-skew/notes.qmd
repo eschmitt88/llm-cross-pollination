@@ -1,0 +1,8 @@
+---
+title: "H1 — is the model's 'random topic' uniform?"
+format: html
+---
+
+```{python}
+import json; s = json.load(open("results/summary.json")); s
+```

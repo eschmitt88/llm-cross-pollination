@@ -1,0 +1,54 @@
+# Development problem set — used while tuning strategies. Six concrete STEM
+# problems, written domain-neutrally enough to publish. The held-out set is
+# data/problems/heldout.yaml and is NOT read by any tuning experiment.
+- id: cnn-overfit
+  home: machine learning
+  text: |
+    Training a small convolutional neural network on a 50k-image classification
+    dataset: validation loss plateaus after ~20 epochs while training loss keeps
+    falling. Standard remedies already tried: dropout, weight decay, data
+    augmentation, early stopping, label smoothing. Want a qualitatively different
+    regularisation idea, not another tuning of these.
+- id: clay-vessel-bending
+  home: structural / solid mechanics
+  text: |
+    Thin-walled ceramic vessels are 3D-printed from clay with a wall profile
+    derived from an audio waveform, so the radius varies irregularly with
+    height. Finite-element analysis shows the vessels fail in bending at about
+    one-third of their height under self-weight plus a small lateral load,
+    before the clay has dried. Want ways to raise the collapse load without
+    changing the profile's visible shape or the material.
+- id: submerged-ring-stability
+  home: ocean / marine engineering
+  text: |
+    A large inflated flexible ring (tens of metres across) holds a seaweed
+    cultivation platform a few metres below the sea surface. Under wave and
+    current loading it oscillates and can tilt or fold; the ring's bending
+    stiffness is low and adding mass is undesirable. Want approaches to keep
+    the platform stable and near-horizontal that don't rely on making the
+    ring heavier or stiffer.
+- id: game-outcome-drift
+  home: applied ML / forecasting
+  text: |
+    A win-probability model for a competitive team video game is trained on
+    millions of historical matches, but the game receives balance patches
+    every few weeks that change the value of characters and items, so the
+    data-generating process is non-stationary. Retraining on recent data only
+    throws away useful history; training on everything lags after each patch.
+    Want a principled way to use all history while adapting fast after a patch.
+- id: rl-sample-efficiency
+  home: reinforcement learning
+  text: |
+    A reinforcement-learning agent learns to control a simulated physical
+    system on a hexagonal grid. Learning works but needs tens of millions of
+    environment steps; the simulator is the bottleneck. Standard tricks tried:
+    frame skipping, prioritised replay, reward shaping, curriculum. Want a
+    different angle on sample efficiency.
+- id: ecg-artifact
+  home: biomedical signal processing
+  text: |
+    Wearable ECG recordings during exercise are corrupted by motion artefact
+    that overlaps the heartbeat's frequency band, so band-pass filtering
+    removes signal with the noise. Adaptive filtering with an accelerometer
+    reference helps only partially. Want a different approach to separating
+    the cardiac signal from the motion artefact.

@@ -1,0 +1,30 @@
+# HELD-OUT problem set. Not read by any experiment that tunes prompts or
+# chooses strategies. Scored once, at the end, by the final evaluation pass.
+- id: battery-thermal
+  home: electrochemistry / thermal engineering
+  text: |
+    A lithium-ion battery pack in a small electric vehicle develops a hot spot
+    in the centre cells during fast charging; the outer cells are fine. Liquid
+    cooling plates and lower charge rates both work but cost range or time.
+    Want a different way to equalise cell temperatures during fast charging.
+- id: protein-aggregation
+  home: biochemistry
+  text: |
+    A therapeutic protein aggregates during storage at refrigerator
+    temperature, losing activity after a few weeks. Excipient screening
+    (sugars, surfactants, amino acids) has been done and gives modest gains.
+    Want a qualitatively different approach to preventing the aggregation.
+- id: microservice-cascade
+  home: distributed systems
+  text: |
+    A web backend of ~40 microservices suffers cascading failures: one slow
+    service causes retries and timeouts that overload its neighbours. Circuit
+    breakers, retry budgets and load shedding are in place and reduce but do
+    not eliminate the cascades. Want a different approach to containing them.
+- id: bridge-fatigue-monitoring
+  home: civil / structural engineering
+  text: |
+    A steel highway bridge has welded joints prone to fatigue cracking. Strain
+    gauges at a few hot spots give good data there but cracks initiate
+    elsewhere; instrumenting every joint is too expensive. Want a way to
+    detect crack initiation anywhere on the structure with sparse sensors.

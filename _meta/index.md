@@ -25,7 +25,8 @@ transfer-depth-ladder).
 
 ## Active experiments
 
-(none yet — first up is H1, the LLM-randomness measurement; see plan §Phases)
+- `experiments/2026-08-22-h1-llm-random-topic-skew/` — H1: skew of model-chosen "random topics" vs the xpol sampler
+- `experiments/2026-08-22-h2-integration-bakeoff/` — H2/H6: naive vs persona vs abstract-reinstantiate (±isolated brief) on the dev set
 
 ## Candidate reading (uncurated)
 

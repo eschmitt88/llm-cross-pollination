@@ -1,0 +1,8 @@
+---
+title: "H2/H6 — integration strategy bake-off"
+format: html
+---
+
+```{python}
+import json; json.load(open("metrics.json"))
+```
