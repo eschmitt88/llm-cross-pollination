@@ -114,7 +114,7 @@ ecg-artifact 3.0/3.0/2.0/2.3 · clay-vessel-bending 2.3/2.0/1.5/1.7.
 - intended_effect_confirmed: yes — brief vs naive paired 13/1, p=0.002 (`metrics.json:abstract-reinstantiate-brief.transfer_depth_mean` 3.29 vs `naive` 2.12)
 - leakage_check: `grep heldout run.py` → 0 hits; only `data/problems/dev.yaml` read — no leakage
 - overfitting_signal: n/a — no training; judge prompt was not tuned on these results
-- delta_from_prior: vs h1-llm-random-topic-skew, different question (H1 = sampler necessity, H2 = integration); no shared metric — H1 numbers in `experiments/2026-08-22-h1-llm-random-topic-skew/metrics.json`, H2 in `metrics.json`
+- delta_from_prior: vs h1-llm-random-topic-skew — different question (sampler necessity vs integration), no shared metric; H1 `experiments/2026-08-22-h1-llm-random-topic-skew/metrics.json:sonnet_specific.duplicate_rate` = 0.71, here `metrics.json:abstract-reinstantiate-brief.transfer_depth_mean` = 3.29
 - unexpected_findings: (1) 94% home-field-default even at depth 4 — transfer ≠ novelty, the common outcome is rediscovery (`results/judgments.jsonl`); (2) persona prompting is worthless for transfer (5/4 vs naive); (3) 4 API safety refusals caused by medical/toxicology seeds (`results/run.log`)
 - next_candidates:
   - H5 tournament: k=8 seeds per problem with the brief template, judge selects the best — test whether the 6% "foreign and useful" rate scales with k (`results/judgments.jsonl` home_field_default=false cases).
