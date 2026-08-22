@@ -1,0 +1,476 @@
+{
+  "cnn-overfit": {
+    "record": {
+      "seed": 16511570,
+      "level": "topic",
+      "k": 3,
+      "stratify": "domain",
+      "population": 4516,
+      "band": [
+        0.5,
+        0.9
+      ],
+      "exclude_home": true,
+      "home": {
+        "field": "Computer Science",
+        "subfield": "Computer Vision and Pattern Recognition",
+        "nearest_topics": [
+          "Face recognition and analysis",
+          "Machine Learning and Data Classification",
+          "Advanced Image Processing Techniques",
+          "Generative Adversarial Networks and Image Synthesis",
+          "Stochastic Gradient Optimization Techniques"
+        ]
+      },
+      "eligible": 1771
+    },
+    "seeds": [
+      {
+        "level": "topic",
+        "name": "Plant Stress Responses and Tolerance",
+        "path": "Life Sciences > Agricultural and Biological Sciences > Plant Science > Plant Stress Responses and Tolerance",
+        "description": "This cluster of papers focuses on the molecular responses of plants to abiotic stress, particularly related to reactive oxygen species, antioxidants, salt tolerance, and drought resistance. It explores the mechanisms of signal transduction, gene expression, and stress signaling pathways in plants under various environmental stresses.",
+        "keywords": [
+          "Reactive Oxygen Species",
+          "Antioxidants",
+          "Abiotic Stress",
+          "Signal Transduction",
+          "Oxidative Stress",
+          "Salt Tolerance"
+        ],
+        "distance": 0.5425,
+        "distance_pct": 0.749,
+        "stratum": "Life Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Synthesis of \u03b2-Lactam Compounds",
+        "path": "Physical Sciences > Chemistry > Organic Chemistry > Synthesis of \u03b2-Lactam Compounds",
+        "description": "This cluster of papers focuses on the synthesis, stereocontrolled synthesis, and applications of \u00df-lactams, including their use as building blocks for various biologically active compounds such as anticancer agents and cholesterol absorption inhibitors. The research also delves into asymmetric catalysis, enantioselective synthesis, and the Kinugasa reaction for the production of these versatile compounds.",
+        "keywords": [
+          "Synthesis",
+          "Asymmetric Catalysis",
+          "Stereocontrolled Synthesis",
+          "Anticancer Agents",
+          "Cholesterol Absorption Inhibitors",
+          "Enantioselective Synthesis"
+        ],
+        "distance": 0.532,
+        "distance_pct": 0.652,
+        "stratum": "Physical Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Economic and Business Studies",
+        "path": "Social Sciences > Economics, Econometrics and Finance > Economics and Econometrics > Economic and Business Studies",
+        "description": "This cluster of papers covers a wide range of topics including globalization, economic policy, public health, COVID-19, international trade, leadership, financial stability, regional development, organizational economics, and sustainable development. The papers analyze the intersection of global economics and public health policy from various perspectives and provide insights into the challenges and opportunities in a rapidly changing world.",
+        "keywords": [
+          "Globalization",
+          "Economic Policy",
+          "Public Health",
+          "COVID-19",
+          "International Trade",
+          "Leadership"
+        ],
+        "distance": 0.5308,
+        "distance_pct": 0.641,
+        "stratum": "Social Sciences"
+      }
+    ]
+  },
+  "clay-vessel-bending": {
+    "record": {
+      "seed": 5303287,
+      "level": "topic",
+      "k": 3,
+      "stratify": "domain",
+      "population": 4516,
+      "band": [
+        0.5,
+        0.9
+      ],
+      "exclude_home": true,
+      "home": {
+        "field": "Engineering",
+        "subfield": "Mechanical Engineering",
+        "nearest_topics": [
+          "Elasticity and Wave Propagation",
+          "Innovations in Concrete and Construction Materials",
+          "Advanced Materials and Mechanics",
+          "Aeroelasticity and Vibration Control",
+          "Additive Manufacturing and 3D Printing Technologies"
+        ]
+      },
+      "eligible": 1715
+    },
+    "seeds": [
+      {
+        "level": "topic",
+        "name": "Employee Performance and Leadership",
+        "path": "Social Sciences > Business, Management and Accounting > Organizational Behavior and Human Resource Management > Employee Performance and Leadership",
+        "description": "This cluster of papers explores the impact of leadership styles, skills, and organizational factors on the performance and innovation capability of various institutions, including schools, universities, industries, and public services. It investigates the mediating effects of job satisfaction, knowledge sharing, and work-family conflict on employee performance. The research also delves into the influence of psychological capital and the readiness for change mentality during the Covid-19 pandemic.",
+        "keywords": [
+          "Leadership",
+          "Skills",
+          "Organizational Performance",
+          "Innovation Capability",
+          "Knowledge Sharing",
+          "Job Satisfaction"
+        ],
+        "distance": 0.5277,
+        "distance_pct": 0.763,
+        "stratum": "Social Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "HIV/AIDS Research and Interventions",
+        "path": "Health Sciences > Medicine > Infectious Diseases > HIV/AIDS Research and Interventions",
+        "description": "This cluster of papers focuses on the prevention, treatment, and epidemiology of HIV/AIDS. It covers topics such as antiretroviral therapy, preexposure prophylaxis, stigma and discrimination, viral load, mother-to-child transmission, adherence to medication, mortality rates, and health-related stigma.",
+        "keywords": [
+          "Antiretroviral Therapy",
+          "HIV Transmission",
+          "Preexposure Prophylaxis",
+          "Stigma and Discrimination",
+          "Viral Load",
+          "Mother-to-Child Transmission"
+        ],
+        "distance": 0.4983,
+        "distance_pct": 0.503,
+        "stratum": "Health Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Freshwater macroinvertebrate diversity and ecology",
+        "path": "Physical Sciences > Environmental Science > Ecology > Freshwater macroinvertebrate diversity and ecology",
+        "description": "This cluster of papers focuses on the influence of land use on stream ecosystems, covering topics such as freshwater biodiversity, aquatic insects, ecosystem functioning, river restoration, metacommunity structure, macroinvertebrate communities, nutrient enrichment, and biomonitoring. The papers explore the impacts of multiple stressors, climate change, drought, and urbanization on stream ecosystems, as well as the role of reference conditions in assessing ecological integrity.",
+        "keywords": [
+          "Stream Ecosystems",
+          "Land Use",
+          "Freshwater Biodiversity",
+          "Aquatic Insects",
+          "Ecosystem Functioning",
+          "River Restoration"
+        ],
+        "distance": 0.5204,
+        "distance_pct": 0.71,
+        "stratum": "Physical Sciences"
+      }
+    ]
+  },
+  "submerged-ring-stability": {
+    "record": {
+      "seed": 1619224,
+      "level": "topic",
+      "k": 3,
+      "stratify": "domain",
+      "population": 4516,
+      "band": [
+        0.5,
+        0.9
+      ],
+      "exclude_home": true,
+      "home": {
+        "field": "Engineering",
+        "subfield": "Civil and Structural Engineering",
+        "nearest_topics": [
+          "Plant Growth Enhancement Techniques",
+          "Structural Analysis and Optimization",
+          "Geophysics and Sensor Technology",
+          "Coastal Management and Development",
+          "Earthquake and Tsunami Effects"
+        ]
+      },
+      "eligible": 1705
+    },
+    "seeds": [
+      {
+        "level": "topic",
+        "name": "Taxation and Compliance Studies",
+        "path": "Social Sciences > Economics, Econometrics and Finance > Economics and Econometrics > Taxation and Compliance Studies",
+        "description": "This cluster of papers explores the determinants, consequences, and enforcement strategies related to tax evasion, informal economy, and shadow economy. It covers topics such as tax compliance, tax morale, corruption, institutional quality, and the impact of fiscal policies on the labor market. The research also delves into the interplay between formal and informal sectors, as well as the role of enforcement mechanisms in influencing taxpayers' behavior.",
+        "keywords": [
+          "Tax Evasion",
+          "Informal Economy",
+          "Tax Compliance",
+          "Shadow Economy",
+          "Enforcement Strategies",
+          "Tax Morale"
+        ],
+        "distance": 0.5178,
+        "distance_pct": 0.802,
+        "stratum": "Social Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Pesticide Exposure and Toxicity",
+        "path": "Life Sciences > Agricultural and Biological Sciences > Plant Science > Pesticide Exposure and Toxicity",
+        "description": "This cluster of papers focuses on the impact of pesticides use in agriculture, covering topics such as pesticide exposure, associated human health effects, environmental impact, risk assessment, neurotoxicity, chronic diseases, organophosphates, and chemical warfare agents. The papers discuss the benefits and hazards of pesticides use, their effects on food safety and security, as well as the urgent need for new concepts in agriculture to address the issues related to pesticide usage.",
+        "keywords": [
+          "Pesticides",
+          "Exposure",
+          "Health Effects",
+          "Environmental Impact",
+          "Risk Assessment",
+          "Neurotoxicity"
+        ],
+        "distance": 0.5168,
+        "distance_pct": 0.793,
+        "stratum": "Life Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Salivary Gland Tumors Diagnosis and Treatment",
+        "path": "Health Sciences > Medicine > Surgery > Salivary Gland Tumors Diagnosis and Treatment",
+        "description": "This cluster of papers focuses on the pathology, genetics, diagnosis, and treatment of various salivary gland tumors and carcinomas, including adenoid cystic carcinoma, mucoepidermoid carcinoma, mammary analogue secretory carcinoma, and myoepithelial tumors. It explores molecular classifications, prognostic factors, fusion genes, fine-needle aspiration cytology, and the role of radiotherapy in the management of these tumors.",
+        "keywords": [
+          "Salivary Gland Tumors",
+          "Adenoid Cystic Carcinoma",
+          "Mucoepidermoid Carcinoma",
+          "Mammary Analogue Secretory Carcinoma",
+          "Myoepithelial Tumors",
+          "ETV6-NTRK3 Fusion Gene"
+        ],
+        "distance": 0.5002,
+        "distance_pct": 0.641,
+        "stratum": "Health Sciences"
+      }
+    ]
+  },
+  "game-outcome-drift": {
+    "record": {
+      "seed": 1971598,
+      "level": "topic",
+      "k": 3,
+      "stratify": "domain",
+      "population": 4516,
+      "band": [
+        0.5,
+        0.9
+      ],
+      "exclude_home": true,
+      "home": {
+        "field": "Computer Science",
+        "subfield": "Artificial Intelligence",
+        "nearest_topics": [
+          "Data Stream Mining Techniques",
+          "Team Dynamics and Performance",
+          "Sports Analytics and Performance",
+          "Probability and Statistical Research",
+          "Game Theory and Applications"
+        ]
+      },
+      "eligible": 1784
+    },
+    "seeds": [
+      {
+        "level": "topic",
+        "name": "Allelopathy and phytotoxic interactions",
+        "path": "Life Sciences > Agricultural and Biological Sciences > Plant Science > Allelopathy and phytotoxic interactions",
+        "description": "This cluster of papers explores the role of allelopathy, focusing on the interactions between plants mediated by allelochemicals, root exudates, and natural products. It covers topics such as weed control, ecological impacts of invasive plants, herbicidal potential of natural compounds, and the physiological and biochemical mechanisms underlying allelopathic interactions.",
+        "keywords": [
+          "Allelochemicals",
+          "Root Exudates",
+          "Natural Products",
+          "Weed Control",
+          "Rhizosphere",
+          "Invasive Plants"
+        ],
+        "distance": 0.5098,
+        "distance_pct": 0.851,
+        "stratum": "Life Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Animal and Plant Science Education",
+        "path": "Social Sciences > Psychology > Social Psychology > Animal and Plant Science Education",
+        "description": "This cluster of papers explores human attitudes and interactions with animals and plants, including the willingness to pay for biodiversity conservation, the selection of flagship species, the impact of education on attitudes, cultural influences on species preferences, and ethical considerations in conservation efforts.",
+        "keywords": [
+          "Conservation",
+          "Attitudes",
+          "Biodiversity",
+          "Flagship Species",
+          "Animal Preferences",
+          "Plant Blindness"
+        ],
+        "distance": 0.4667,
+        "distance_pct": 0.517,
+        "stratum": "Social Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Actinomycetales infections and treatment",
+        "path": "Health Sciences > Medicine > Microbiology > Actinomycetales infections and treatment",
+        "description": "This cluster of papers focuses on the clinical and molecular aspects of Nocardiosis, including Nocardia spp., actinomycosis, mycetoma, antimicrobial susceptibility, transplant recipients, genomic sequencing, taxonomy, epidemiology, and clinical features. It provides insights into the risk factors, characteristics, outcomes, and management of Nocardia infections in various patient populations.",
+        "keywords": [
+          "Nocardia spp.",
+          "Actinomycosis",
+          "Mycetoma",
+          "Antimicrobial Susceptibility",
+          "Transplant Recipients",
+          "Genomic Sequencing"
+        ],
+        "distance": 0.503,
+        "distance_pct": 0.807,
+        "stratum": "Health Sciences"
+      }
+    ]
+  },
+  "rl-sample-efficiency": {
+    "record": {
+      "seed": 2168444,
+      "level": "topic",
+      "k": 3,
+      "stratify": "domain",
+      "population": 4516,
+      "band": [
+        0.5,
+        0.9
+      ],
+      "exclude_home": true,
+      "home": {
+        "field": "Computer Science",
+        "subfield": "Control and Systems Engineering",
+        "nearest_topics": [
+          "Reinforcement Learning in Robotics",
+          "Adaptive Dynamic Programming Control",
+          "Robot Manipulation and Learning",
+          "Visual and Cognitive Learning Processes",
+          "Artificial Intelligence in Games"
+        ]
+      },
+      "eligible": 1782
+    },
+    "seeds": [
+      {
+        "level": "topic",
+        "name": "Laser Design and Applications",
+        "path": "Physical Sciences > Engineering > Electrical and Electronic Engineering > Laser Design and Applications",
+        "description": "This cluster of papers focuses on the development and application of electric discharge pumped lasers, particularly emphasizing the use of atomic iodine and singlet oxygen generation for continuous wave operation and gain measurement. The research also covers topics such as copper vapor lasers, frequency conversion, and high power laser technology.",
+        "keywords": [
+          "Electric Discharge",
+          "Laser Oscillation",
+          "Atomic Iodine",
+          "Singlet Oxygen Generation",
+          "Oxygen-Iodine Laser",
+          "Gain Measurement"
+        ],
+        "distance": 0.527,
+        "distance_pct": 0.682,
+        "stratum": "Physical Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Pancasila Values in Education",
+        "path": "Social Sciences > Social Sciences > Education > Pancasila Values in Education",
+        "description": "This cluster of papers focuses on education, character development, and the implementation of Pancasila values in Indonesian society. It covers topics such as civic engagement, multiculturalism, online learning, youth participation, and religious education. The cluster reflects a strong emphasis on integrating ethical and moral values into educational practices.",
+        "keywords": [
+          "Pancasila",
+          "Character Development",
+          "Education",
+          "Globalization",
+          "Civic Engagement",
+          "Online Learning"
+        ],
+        "distance": 0.5093,
+        "distance_pct": 0.539,
+        "stratum": "Social Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Lymphoma Diagnosis and Treatment",
+        "path": "Health Sciences > Medicine > Pathology and Forensic Medicine > Lymphoma Diagnosis and Treatment",
+        "description": "This cluster of papers focuses on the classification, molecular profiling, genetic pathogenesis, and treatment strategies for various types of lymphoid neoplasms, including Hodgkin's lymphoma, diffuse large B-cell lymphoma, follicular lymphoma, mantle cell lymphoma, and peripheral T-cell lymphoma. It also explores the use of PET imaging, rituximab therapy, and gene expression profiling to predict survival and guide treatment decisions.",
+        "keywords": [
+          "Lymphoma",
+          "Classification",
+          "Molecular Profiling",
+          "Rituximab",
+          "Genetic Pathogenesis",
+          "PET Imaging"
+        ],
+        "distance": 0.5242,
+        "distance_pct": 0.658,
+        "stratum": "Health Sciences"
+      }
+    ]
+  },
+  "ecg-artifact": {
+    "record": {
+      "seed": 688048,
+      "level": "topic",
+      "k": 3,
+      "stratify": "domain",
+      "population": 4516,
+      "band": [
+        0.5,
+        0.9
+      ],
+      "exclude_home": true,
+      "home": {
+        "field": "Medicine",
+        "subfield": "Cardiology and Cardiovascular Medicine",
+        "nearest_topics": [
+          "ECG Monitoring and Analysis",
+          "Cardiovascular Effects of Exercise",
+          "Non-Invasive Vital Sign Monitoring",
+          "Cardiovascular and exercise physiology",
+          "Context-Aware Activity Recognition Systems"
+        ]
+      },
+      "eligible": 1617
+    },
+    "seeds": [
+      {
+        "level": "topic",
+        "name": "Infant Nutrition and Health",
+        "path": "Health Sciences > Nursing > Nutrition and Dietetics > Infant Nutrition and Health",
+        "description": "This cluster of papers focuses on the composition and health effects of human milk, particularly in relation to preterm infants. It covers topics such as the composition of human milk, the impact on growth outcomes and neurodevelopment, the role in preventing necrotizing enterocolitis, the significance of oligosaccharides and lactoferrin, the development of intestinal microbiota, and the use of probiotics. The papers also discuss the nutritional and immune developmental significance of human milk for preterm infants.",
+        "keywords": [
+          "Human Milk Composition",
+          "Preterm Infants",
+          "Necrotizing Enterocolitis",
+          "Oligosaccharides",
+          "Lactoferrin",
+          "Growth Outcomes"
+        ],
+        "distance": 0.563,
+        "distance_pct": 0.863,
+        "stratum": "Health Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Economic, Social, and Public Health Issues in Russia and Globally",
+        "path": "Social Sciences > Decision Sciences > Management Science and Operations Research > Economic, Social, and Public Health Issues in Russia and Globally",
+        "description": "This cluster of papers covers a wide range of topics related to the methods and applications of cluster analysis in various fields such as statistics, governance, economics, and public policymaking. It includes discussions on clusterability methods, descriptive statistics, visualization, crowdsourcing, statistical modeling, nodal governance thinking, digital economy, economic development, and globalization.",
+        "keywords": [
+          "Clusterability Methods",
+          "Descriptive Statistics",
+          "Visualization",
+          "Crowdsourcing",
+          "Public Policymaking",
+          "Statistical Modeling"
+        ],
+        "distance": 0.5382,
+        "distance_pct": 0.685,
+        "stratum": "Social Sciences"
+      },
+      {
+        "level": "topic",
+        "name": "Crystal Structures and Properties",
+        "path": "Physical Sciences > Materials Science > Electronic, Optical and Magnetic Materials > Crystal Structures and Properties",
+        "description": "This cluster of papers focuses on the advancements in the research of nonlinear optical materials, particularly in the domain of crystallographic computing, deep-ultraviolet materials, second harmonic generation, inorganic crystal structures, chalcogenide clusters, bond valence model, fluorooxoborates, metal chalcogenides, and crystal growth.",
+        "keywords": [
+          "Nonlinear Optical Materials",
+          "Crystallographic Computing",
+          "Deep-Ultraviolet Materials",
+          "Second Harmonic Generation",
+          "Inorganic Crystal Structures",
+          "Chalcogenide Clusters"
+        ],
+        "distance": 0.54,
+        "distance_pct": 0.701,
+        "stratum": "Physical Sciences"
+      }
+    ]
+  }
+}

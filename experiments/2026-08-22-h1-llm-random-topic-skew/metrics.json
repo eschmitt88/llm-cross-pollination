@@ -1,1 +1,54 @@
-{}
+{
+  "haiku_specific": {
+    "n": 150,
+    "field_entropy_bits": 3.594,
+    "fields_seen": 17,
+    "top5_field_mass": 0.613,
+    "topic_entropy_bits": 6.32,
+    "unique_topics": 96,
+    "duplicate_rate": 0.113
+  },
+  "sonnet_specific": {
+    "n": 100,
+    "field_entropy_bits": 1.831,
+    "fields_seen": 8,
+    "top5_field_mass": 0.96,
+    "topic_entropy_bits": 3.035,
+    "unique_topics": 16,
+    "duplicate_rate": 0.71
+  },
+  "haiku_broad": {
+    "n": 100,
+    "field_entropy_bits": 2.26,
+    "fields_seen": 10,
+    "top5_field_mass": 0.92,
+    "topic_entropy_bits": 3.155,
+    "unique_topics": 21,
+    "duplicate_rate": 0.79
+  },
+  "haiku_foreign_for_ml": {
+    "n": 100,
+    "field_entropy_bits": 2.144,
+    "fields_seen": 10,
+    "top5_field_mass": 0.91,
+    "topic_entropy_bits": 3.09,
+    "unique_topics": 21,
+    "duplicate_rate": 0.79
+  },
+  "xpol_sampler_stratified": {
+    "n": 1000,
+    "field_entropy_bits": 3.886,
+    "fields_seen": 25,
+    "top5_field_mass": 0.613,
+    "topic_entropy_bits": 9.966,
+    "unique_topics": 1000
+  },
+  "xpol_sampler_uniform": {
+    "n": 1000,
+    "field_entropy_bits": 3.963,
+    "fields_seen": 26,
+    "top5_field_mass": 0.567,
+    "topic_entropy_bits": 9.966,
+    "unique_topics": 1000
+  }
+}

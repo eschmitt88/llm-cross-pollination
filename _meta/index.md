@@ -25,7 +25,7 @@ transfer-depth-ladder).
 
 ## Active experiments
 
-- `experiments/2026-08-22-h1-llm-random-topic-skew/` — H1: skew of model-chosen "random topics" vs the xpol sampler
+- ~~H1~~ done: `experiments/2026-08-22-h1-llm-random-topic-skew/` — model-chosen "random topics" collapse (Sonnet 71% duplicates); sampler is necessary
 - `experiments/2026-08-22-h2-integration-bakeoff/` — H2/H6: naive vs persona vs abstract-reinstantiate (±isolated brief) on the dev set
 
 ## Candidate reading (uncurated)

@@ -1,0 +1,684 @@
+{
+  "haiku_specific": {
+    "n": 150,
+    "field_entropy_bits": 3.594,
+    "field_entropy_max_bits": 4.7,
+    "fields_seen": 17,
+    "fields_total": 26,
+    "top5_field_mass": 0.613,
+    "top_fields": [
+      [
+        "Earth and Planetary Sciences",
+        26
+      ],
+      [
+        "Biochemistry, Genetics and Molecular Biology",
+        21
+      ],
+      [
+        "Engineering",
+        17
+      ],
+      [
+        "Environmental Science",
+        15
+      ],
+      [
+        "Agricultural and Biological Sciences",
+        13
+      ],
+      [
+        "Computer Science",
+        12
+      ],
+      [
+        "Physics and Astronomy",
+        10
+      ],
+      [
+        "Neuroscience",
+        8
+      ]
+    ],
+    "domain_dist": {
+      "Physical Sciences": 0.6,
+      "Life Sciences": 0.287,
+      "Social Sciences": 0.107,
+      "Health Sciences": 0.007
+    },
+    "topic_entropy_bits": 6.32,
+    "unique_topics": 96,
+    "top_topics": [
+      [
+        "Tree-ring climate responses",
+        7
+      ],
+      [
+        "Geomagnetism and Paleomagnetism Studies",
+        6
+      ],
+      [
+        "Mycorrhizal Fungi and Plant Interactions",
+        5
+      ],
+      [
+        "Microbial Community Ecology and Physiology",
+        5
+      ],
+      [
+        "Topological and Geometric Data Analysis",
+        5
+      ],
+      [
+        "Hydrology and Sediment Transport Processes",
+        4
+      ],
+      [
+        "Paleontology and Stratigraphy of Fossils",
+        3
+      ],
+      [
+        "Syntax, Semantics, Linguistic Variation",
+        3
+      ]
+    ],
+    "unique_answers": 133,
+    "duplicate_rate": 0.113,
+    "top_answers": [
+      [
+        "dendrochronology",
+        5
+      ],
+      [
+        "topological data analysis",
+        5
+      ],
+      [
+        "palynology",
+        4
+      ],
+      [
+        "phonotactics",
+        2
+      ],
+      [
+        "rheology",
+        2
+      ],
+      [
+        "tribology",
+        2
+      ],
+      [
+        "paleomagnetism",
+        2
+      ],
+      [
+        "quantum error correction",
+        2
+      ],
+      [
+        "topological defects in liquid crystal polymers",
+        2
+      ],
+      [
+        "phylogeographic signal detection in ancient dna",
+        1
+      ]
+    ],
+    "failed_calls": 0
+  },
+  "sonnet_specific": {
+    "n": 100,
+    "field_entropy_bits": 1.831,
+    "field_entropy_max_bits": 4.7,
+    "fields_seen": 8,
+    "fields_total": 26,
+    "top5_field_mass": 0.96,
+    "top_fields": [
+      [
+        "Arts and Humanities",
+        56
+      ],
+      [
+        "Social Sciences",
+        26
+      ],
+      [
+        "Computer Science",
+        6
+      ],
+      [
+        "Materials Science",
+        5
+      ],
+      [
+        "Engineering",
+        3
+      ],
+      [
+        "Physics and Astronomy",
+        2
+      ],
+      [
+        "Mathematics",
+        1
+      ],
+      [
+        "Chemical Engineering",
+        1
+      ]
+    ],
+    "domain_dist": {
+      "Social Sciences": 0.82,
+      "Physical Sciences": 0.18
+    },
+    "topic_entropy_bits": 3.035,
+    "unique_topics": 16,
+    "top_topics": [
+      [
+        "Cultural and Social Studies in Latin America",
+        35
+      ],
+      [
+        "Diverse Musicological Studies",
+        20
+      ],
+      [
+        "Death, Funerary Practices, and Mourning",
+        9
+      ],
+      [
+        "European Linguistics and Anthropology",
+        8
+      ],
+      [
+        "Liquid Crystal Research Advancements",
+        5
+      ],
+      [
+        "Music Technology and Sound Studies",
+        4
+      ],
+      [
+        "Geographies of human-animal interactions",
+        4
+      ],
+      [
+        "Cultural and Religious Practices in Indonesia",
+        4
+      ]
+    ],
+    "unique_answers": 29,
+    "duplicate_rate": 0.71,
+    "top_answers": [
+      [
+        "ethnomusicology of andean panpipe traditions",
+        33
+      ],
+      [
+        "ethnomusicology",
+        8
+      ],
+      [
+        "ethnomusicology of diasporic funeral lament traditions",
+        7
+      ],
+      [
+        "ethnomusicology of ritual soundscapes",
+        5
+      ],
+      [
+        "cymatics",
+        5
+      ],
+      [
+        "ethnomusicology of andean panpipe ensembles",
+        4
+      ],
+      [
+        "xenolinguistics in exoplanet biosignature semiotics",
+        4
+      ],
+      [
+        "ethnomusicology of southeast asian gamelan traditions",
+        4
+      ],
+      [
+        "ethnomusicology of diasporic funerary music",
+        3
+      ],
+      [
+        "ethnomusicology of diasporic funeral music",
+        3
+      ]
+    ],
+    "failed_calls": 0
+  },
+  "haiku_broad": {
+    "n": 100,
+    "field_entropy_bits": 2.26,
+    "field_entropy_max_bits": 4.7,
+    "fields_seen": 10,
+    "fields_total": 26,
+    "top5_field_mass": 0.92,
+    "top_fields": [
+      [
+        "Veterinary",
+        41
+      ],
+      [
+        "Earth and Planetary Sciences",
+        32
+      ],
+      [
+        "Agricultural and Biological Sciences",
+        8
+      ],
+      [
+        "Environmental Science",
+        8
+      ],
+      [
+        "Social Sciences",
+        3
+      ],
+      [
+        "Medicine",
+        2
+      ],
+      [
+        "Physics and Astronomy",
+        2
+      ],
+      [
+        "Computer Science",
+        2
+      ]
+    ],
+    "domain_dist": {
+      "Physical Sciences": 0.45,
+      "Health Sciences": 0.43,
+      "Life Sciences": 0.08,
+      "Social Sciences": 0.04
+    },
+    "topic_entropy_bits": 3.155,
+    "unique_topics": 21,
+    "top_topics": [
+      [
+        "Infectious Diseases and Mycology",
+        41
+      ],
+      [
+        "Seismic Waves and Analysis",
+        14
+      ],
+      [
+        "Paleontology and Evolutionary Biology",
+        8
+      ],
+      [
+        "Ethnobotanical and Medicinal Plants Studies",
+        7
+      ],
+      [
+        "Aquatic Ecosystems and Biodiversity",
+        6
+      ],
+      [
+        "Oceanographic and Atmospheric Processes",
+        3
+      ],
+      [
+        "Comparative Animal Anatomy Studies",
+        2
+      ],
+      [
+        "Space Science and Extraterrestrial Life",
+        2
+      ]
+    ],
+    "unique_answers": 21,
+    "duplicate_rate": 0.79,
+    "top_answers": [
+      [
+        "mycology",
+        41
+      ],
+      [
+        "seismology",
+        14
+      ],
+      [
+        "paleontology",
+        8
+      ],
+      [
+        "ethnobotany",
+        7
+      ],
+      [
+        "limnology",
+        6
+      ],
+      [
+        "oceanography",
+        3
+      ],
+      [
+        "ornithology",
+        2
+      ],
+      [
+        "astrobiology",
+        2
+      ],
+      [
+        "volcanology",
+        2
+      ],
+      [
+        "glaciology",
+        2
+      ]
+    ],
+    "failed_calls": 0
+  },
+  "haiku_foreign_for_ml": {
+    "n": 100,
+    "field_entropy_bits": 2.144,
+    "field_entropy_max_bits": 4.7,
+    "fields_seen": 10,
+    "fields_total": 26,
+    "top5_field_mass": 0.91,
+    "top_fields": [
+      [
+        "Agricultural and Biological Sciences",
+        49
+      ],
+      [
+        "Environmental Science",
+        28
+      ],
+      [
+        "Immunology and Microbiology",
+        6
+      ],
+      [
+        "Veterinary",
+        4
+      ],
+      [
+        "Earth and Planetary Sciences",
+        4
+      ],
+      [
+        "Arts and Humanities",
+        3
+      ],
+      [
+        "Engineering",
+        2
+      ],
+      [
+        "Social Sciences",
+        2
+      ]
+    ],
+    "domain_dist": {
+      "Life Sciences": 0.56,
+      "Physical Sciences": 0.35,
+      "Social Sciences": 0.05,
+      "Health Sciences": 0.04
+    },
+    "topic_entropy_bits": 3.09,
+    "unique_topics": 21,
+    "top_topics": [
+      [
+        "Agricultural and Food Sciences",
+        32
+      ],
+      [
+        "Ecology and Vegetation Dynamics Studies",
+        28
+      ],
+      [
+        "Horticultural and Viticultural Research",
+        7
+      ],
+      [
+        "Immunotoxicology and immune responses",
+        6
+      ],
+      [
+        "Plant Growth and Agriculture Techniques",
+        5
+      ],
+      [
+        "Infectious Diseases and Mycology",
+        4
+      ],
+      [
+        "Historical Geography and Cartography",
+        2
+      ],
+      [
+        "Archaeological Research and Protection",
+        2
+      ]
+    ],
+    "unique_answers": 21,
+    "duplicate_rate": 0.79,
+    "top_answers": [
+      [
+        "forestry",
+        32
+      ],
+      [
+        "ecology",
+        28
+      ],
+      [
+        "viticulture",
+        7
+      ],
+      [
+        "immunology",
+        6
+      ],
+      [
+        "mycology",
+        4
+      ],
+      [
+        "horticulture",
+        4
+      ],
+      [
+        "cartography",
+        2
+      ],
+      [
+        "archaeology",
+        2
+      ],
+      [
+        "musicology",
+        2
+      ],
+      [
+        "gardening",
+        2
+      ]
+    ],
+    "failed_calls": 0
+  },
+  "xpol_sampler_stratified": {
+    "n": 1000,
+    "field_entropy_bits": 3.886,
+    "field_entropy_max_bits": 4.7,
+    "fields_seen": 25,
+    "fields_total": 26,
+    "top5_field_mass": 0.613,
+    "top_fields": [
+      [
+        "Medicine",
+        205
+      ],
+      [
+        "Social Sciences",
+        119
+      ],
+      [
+        "Agricultural and Biological Sciences",
+        106
+      ],
+      [
+        "Biochemistry, Genetics and Molecular Biology",
+        103
+      ],
+      [
+        "Engineering",
+        80
+      ],
+      [
+        "Arts and Humanities",
+        45
+      ],
+      [
+        "Computer Science",
+        43
+      ],
+      [
+        "Environmental Science",
+        38
+      ]
+    ],
+    "domain_dist": {
+      "Social Sciences": 0.25,
+      "Physical Sciences": 0.25,
+      "Life Sciences": 0.25,
+      "Health Sciences": 0.25
+    },
+    "topic_entropy_bits": 9.966,
+    "unique_topics": 1000,
+    "top_topics": [
+      [
+        "Linguistics and Language Analysis",
+        1
+      ],
+      [
+        "Railway Engineering and Dynamics",
+        1
+      ],
+      [
+        "Hereditary Neurological Disorders",
+        1
+      ],
+      [
+        "Health, Nursing, Elderly Care",
+        1
+      ],
+      [
+        "Education in Rural Contexts",
+        1
+      ],
+      [
+        "Supercapacitor Materials and Fabrication",
+        1
+      ],
+      [
+        "Fern and Epiphyte Biology",
+        1
+      ],
+      [
+        "Long-Term Effects of COVID-19",
+        1
+      ]
+    ]
+  },
+  "xpol_sampler_uniform": {
+    "n": 1000,
+    "field_entropy_bits": 3.963,
+    "field_entropy_max_bits": 4.7,
+    "fields_seen": 26,
+    "fields_total": 26,
+    "top5_field_mass": 0.567,
+    "top_fields": [
+      [
+        "Medicine",
+        162
+      ],
+      [
+        "Social Sciences",
+        160
+      ],
+      [
+        "Engineering",
+        122
+      ],
+      [
+        "Computer Science",
+        67
+      ],
+      [
+        "Arts and Humanities",
+        56
+      ],
+      [
+        "Agricultural and Biological Sciences",
+        52
+      ],
+      [
+        "Environmental Science",
+        49
+      ],
+      [
+        "Biochemistry, Genetics and Molecular Biology",
+        48
+      ]
+    ],
+    "domain_dist": {
+      "Physical Sciences": 0.363,
+      "Social Sciences": 0.313,
+      "Health Sciences": 0.194,
+      "Life Sciences": 0.13
+    },
+    "topic_entropy_bits": 9.966,
+    "unique_topics": 1000,
+    "top_topics": [
+      [
+        "Nonlocal and gradient elasticity in micro/nano structures",
+        1
+      ],
+      [
+        "Catalysis for Biomass Conversion",
+        1
+      ],
+      [
+        "Biomedical Research and Pathophysiology",
+        1
+      ],
+      [
+        "Facial Trauma and Fracture Management",
+        1
+      ],
+      [
+        "Augmented Reality Applications",
+        1
+      ],
+      [
+        "Direction-of-Arrival Estimation Techniques",
+        1
+      ],
+      [
+        "Assembly Line Balancing Optimization",
+        1
+      ],
+      [
+        "Culinary Culture and Tourism",
+        1
+      ]
+    ]
+  }
+}
