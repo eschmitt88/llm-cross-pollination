@@ -114,7 +114,7 @@ ecg-artifact 3.0/3.0/2.0/2.3 · clay-vessel-bending 2.3/2.0/1.5/1.7.
 - intended_effect_confirmed: yes — brief vs naive paired 13/1, p=0.002 (`metrics.json:abstract-reinstantiate-brief.transfer_depth_mean` 3.29 vs `naive` 2.12)
 - leakage_check: `grep heldout run.py` → 0 hits; only `data/problems/dev.yaml` read — no leakage
 - overfitting_signal: n/a — no training; judge prompt was not tuned on these results
-- delta_from_prior: vs h1-llm-random-topic-skew, different question (H1 = sampler necessity, H2 = integration); no shared metric
+- delta_from_prior: vs h1-llm-random-topic-skew, different question (H1 = sampler necessity, H2 = integration); no shared metric — H1 numbers in `experiments/2026-08-22-h1-llm-random-topic-skew/metrics.json`, H2 in `metrics.json`
 - unexpected_findings: (1) 94% home-field-default even at depth 4 — transfer ≠ novelty, the common outcome is rediscovery (`results/judgments.jsonl`); (2) persona prompting is worthless for transfer (5/4 vs naive); (3) 4 API safety refusals caused by medical/toxicology seeds (`results/run.log`)
 - next_candidates:
   - H5 tournament: k=8 seeds per problem with the brief template, judge selects the best — test whether the 6% "foreign and useful" rate scales with k (`results/judgments.jsonl` home_field_default=false cases).
@@ -124,18 +124,3 @@ ecg-artifact 3.0/3.0/2.0/2.3 · clay-vessel-bending 2.3/2.0/1.5/1.7.
 ## Follow-up
 
 - Proposals worth a human read: `results/gen/cnn-overfit__abstract-reinstantiate__0.json` (plant stress → feedback-controlled regularisation, judged foreign+useful), `game-outcome-drift__abstract-reinstantiate-brief__0.json` (allelochemical decay kinetics → patch-effect half-lives), `submerged-ring-stability__abstract-reinstantiate-brief__0.json` (risk-based tax audit selection → sensor/actuator budget allocation).
-
-## Diagnostics
-
-- intended_effect_confirmed: n/a
-- leakage_check: heldout.yaml never opened by run.py (grep) — n/a until run
-- overfitting_signal: n/a
-- delta_from_prior: n/a
-- unexpected_findings: n/a
-- next_candidates:
-  - n/a
-  - n/a
-
-## Follow-up
-
-- ...
