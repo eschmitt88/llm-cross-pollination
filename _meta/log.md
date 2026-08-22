@@ -45,3 +45,4 @@ skills; read by `/lint`.
 2026-08-22 03:15 curate 2026-08-22-cross-domain-prompting-techniques.md ingested=6 declined=1 dup=5
 2026-08-22 03:15 curate 2026-08-22-random-topic-sampling-and-analogical-distance.md ingested=4 declined=2 dup=6
 2026-08-22 03:41 experiment done h2-integration-bakeoff; method.md v0.1; ADR 0002
+2026-08-22 03:41 wrap session-2 max-agency burst: xpol, H1, H2, 33 lit notes, method v0.1
