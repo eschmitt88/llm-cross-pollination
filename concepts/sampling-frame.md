@@ -1,10 +1,10 @@
 ---
 kind: concept
 name: "sampling frame"
-status: seedling
+status: growing
 added: "2026-08-22"
-sources: []
-related_concepts: ["foreign-seed", "external-randomness", "analogical-distance"]
+sources: ["cox2021directed"]
+related_concepts: ["foreign-seed", "external-randomness", "analogical-distance", "directed-diversity"]
 related_experiments: []
 tags: ["q1-choosing"]
 ---
@@ -39,3 +39,10 @@ compared against uniform over the frame.
   domains — [[external-randomness]].
 - The frame entries must be embeddable for distance-banded sampling —
   [[analogical-distance]].
+- [[directed-diversity]] supplies a reusable algorithm for the adjacent
+  problem — picking k well-spread points from a large embedded population
+  at scale (MST-based greedy selection) — and a ready-made vocabulary of
+  diversity metrics (mean/min pairwise distance, distance-from-centroid,
+  entropy, Chamfer distance) worth reusing for the sampler's own
+  diagnostics, even though its objective (maximize spread) needs adapting
+  to this project's objective (sample within a target distance band).

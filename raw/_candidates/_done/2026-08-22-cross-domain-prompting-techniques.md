@@ -90,3 +90,18 @@ n_returned: 12
 - type: paper
 - summary: Ding, Srinivasan, MacNeil & Chan (C&C 2023) systematically test whether LLMs can help humans generate useful cross-domain analogies for creative problem reformulation, finding LLM-generated analogies frequently judged helpful, alongside identified risks (e.g., low-quality or harmful suggestions).
 - reason: The most direct empirical test of the project's core premise — that LLM-mediated cross-domain analogy measurably helps creative/problem-reformulation tasks — and co-authored by Joel Chan, again bridging the classic analogy-mining line into an LLM evaluation; strong candidate for the project's foundational literature note.
+
+## Disposition (curated 2026-08-22)
+
+- INGESTED: 1. Large Language Models as Analogical Reasoners — `literature/papers/yasunaga2023large.md`
+- INGESTED: 2. Accelerating Innovation Through Analogy Mining — `literature/papers/hope2017accelerating.md`
+- DEFERRED: 3. SOLVENT: A Mixed Initiative System for Finding Analogies between Research Papers — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 4. AutoTRIZ: Automating Engineering Innovation with TRIZ and Large Language Models — `literature/papers/jiang2024autotriz.md`
+- DEFERRED: 5. IDEAFix: Evaluation Framework for Creative Defixation Prompting in LLMs — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 6. Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 7. SciMON: Scientific Inspiration Machines Optimized for Novelty — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 8. Chain of Ideas: Revolutionizing Research via Novel Idea Development with LLM Agents — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 9. Nova: An Iterative Planning and Search Approach to Enhance Novelty and Diversity of LLM Generated Ideas — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 10. Enhancing Design Concept Diversity: Multi-Persona Prompting Strategies for Large Language Models — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 11. PopBlends: Strategies for Conceptual Blending with Large Language Models — `literature/papers/wang2021popblends.md`
+- INGESTED: 12. Fluid Transformers and Creative Analogies: Exploring Large Language Models' Capacity for Augmenting Cross-Domain Analogical Creativity — `literature/papers/ding2023fluid.md`

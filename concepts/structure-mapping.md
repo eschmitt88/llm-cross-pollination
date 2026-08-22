@@ -1,9 +1,9 @@
 ---
 kind: concept
 name: "structure mapping"
-status: seedling
+status: growing
 added: "2026-08-22"
-sources: []
+sources: ["gentner1983structuremapping"]
 related_concepts: ["analogical-distance", "abstract-then-reinstantiate", "transfer-depth-ladder"]
 related_experiments: []
 tags: ["q2-integrating", "theory"]
@@ -27,6 +27,17 @@ the source, map back — is the [[abstract-then-reinstantiate]] template.
 Structure mapping also gives the rubric for judging outputs: the
 [[transfer-depth-ladder]] is roughly "how much relational structure
 survived the mapping".
+
+[[gentner1983structuremapping]] is the founding paper: analogy is a mapping
+of *relations* (predicates over two or more arguments — CAUSE,
+GREATER-THAN, REVOLVES-AROUND), deliberately discarding object attributes
+(1-place predicates like LARGE, YELLOW). Its **systematicity principle** —
+prefer mappings that carry over a coherent, interconnected system of
+relations, especially higher-order relations like CAUSE-between-relations,
+over mappings of isolated facts, even when the isolated fact is locally as
+good a match — is the closest thing in the literature to an operational
+definition of "mechanism transfer" vs. "decoration," and is worth quoting
+directly in the [[transfer-depth-ladder]] judge rubric.
 
 ## Connections
 

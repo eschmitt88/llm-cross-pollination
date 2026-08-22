@@ -90,3 +90,18 @@ n_returned: 12
 - type: paper
 - summary: Tracks creative-output similarity across LLM releases over roughly three years, examining whether successive model generations are converging toward more similar creative outputs over time rather than diversifying.
 - reason: Most recent (2026) longitudinal data point on the homogenization trend itself, useful for framing the project's motivation ("is the problem getting worse") and for methodology on measuring cross-model/cross-time idea similarity.
+
+## Disposition (curated 2026-08-22)
+
+- INGESTED: 1. Generative AI enhances individual creativity but reduces the collective diversity of novel content — `literature/papers/doshi2024generative.md`
+- INGESTED: 2. Homogenization Effects of Large Language Models on Human Creative Ideation — `literature/papers/anderson2024homogenization.md`
+- DEFERRED: 3. Does Writing with Language Models Reduce Content Diversity? — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 4. Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity — `literature/papers/zhang2025verbalized.md`
+- DEFERRED: 5. We're Different, We're the Same: Creative Homogeneity Across LLMs — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 6. Diverse AI Personas Can Mitigate the Homogenization Effect in Human-AI Collaborative Ideation — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 7. Naming unrelated words predicts creativity (the Divergent Association Task) — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 8. Probing the Creativity of Large Language Models: Can models produce divergent semantic association? — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 9. Death of the Novel(ty): Beyond n-Gram Novelty as a Metric for Textual Creativity — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 10. NoveltyBench: Evaluating Language Models for Humanlike Diversity — `literature/papers/zhang2025noveltybench.md`
+- DEFERRED: 11. Automated Creativity Evaluation of Language Models Across Open-Ended Tasks — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 12. Are LLMs becoming similarly creative? Evidence from three years of models — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it

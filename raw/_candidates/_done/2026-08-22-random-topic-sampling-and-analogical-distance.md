@@ -90,3 +90,18 @@ n_returned: 12
 - type: post
 - summary: Koestler's seminal theory that creative acts across humor, science, and art share a common pattern — "bisociation" — the collision/combination of two previously unrelated frames of reference into one new matrix of meaning.
 - reason: Seminal, load-bearing older work naming the phenomenon this whole project operationalizes (deliberately colliding a foreign frame with a target problem); the conceptual ancestor of both Gentner's and Fauconnier & Turner's later formal theories.
+
+## Disposition (curated 2026-08-22)
+
+- INGESTED: 1. Directed Diversity: Leveraging Language Embedding Distances for Collective Creativity in Crowd Ideation — `literature/papers/cox2021directed.md`
+- INGESTED: 2. The Meaning of "Near" and "Far": The Impact of Structuring Design Databases and the Effect of Distance of Analogy on Design Output (Fu, Chan, Cagan, Kotovsky, Schunn, Wood) — `literature/papers/fu2013meaning.md`
+- DEFERRED: 3. On the Benefits and Pitfalls of Analogies for Innovative Design: Ideation Performance Based on Analogical Distance, Commonness, and Modality of Examples (Chan, Fu, Schunn, Cagan, Wood, Kotovsky) — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 4. Large Language Models Are Bad Dice Players: LLMs Struggle to Generate Random Numbers from Statistical Distributions — `literature/papers/zhao2026large.md`
+- INGESTED: 5. Deterministic or Probabilistic? The Psychology of LLMs as Random Number Generators — `literature/papers/coronadoblazquez2025deterministic.md`
+- INGESTED: 6. Atypical Combinations and Scientific Impact (Uzzi, Mukherjee, Stringer, Jones) — `literature/papers/uzzi2013atypical.md`
+- INGESTED: 7. Structure-Mapping: A Theoretical Framework for Analogy (Gentner, 1983) — `literature/papers/gentner1983structuremapping.md`
+- DEFERRED: 8. OpenAlex: A Fully-Open Index of Scholarly Works, Authors, Venues, Institutions, and Concepts — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 9. A Random Walk Sampling on Knowledge Graphs for Semantic-Oriented Statistical Tasks — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 10. The Influence of Exposure to Randomness on Lateral Thinking in Divergent, Convergent, and Creative Search — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 11. Conceptual Integration Networks (Fauconnier & Turner, 1998) — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- DEFERRED: 12. The Act of Creation (Koestler, 1964) — bisociation — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it

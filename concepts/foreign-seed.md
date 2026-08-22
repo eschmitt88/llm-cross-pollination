@@ -1,9 +1,9 @@
 ---
 kind: concept
 name: "foreign seed"
-status: seedling
+status: growing
 added: "2026-08-22"
-sources: []
+sources: ["uzzi2013atypical"]
 related_concepts: ["sampling-frame", "external-randomness", "analogical-distance", "abstract-then-reinstantiate", "transfer-depth-ladder"]
 related_experiments: []
 tags: ["core", "q1-choosing", "q2-integrating"]
@@ -34,3 +34,8 @@ half of the project ([[abstract-then-reinstantiate]], [[seed-brief-isolation]]).
 - The user's motivating example — organic chemistry → neural-network
   training — is a field-level seed; "retrosynthesis" or "protecting groups"
   would be the method-level version of the same seed.
+- [[uzzi2013atypical]]'s bibliometric finding — the highest-impact papers
+  combine a conventional core with an atypical fringe, not atypicality
+  throughout — is the closest large-scale, real-world evidence that
+  motivates *why* a foreign seed should be dosed and blended with the home
+  field's own toolkit rather than substituting for it wholesale.

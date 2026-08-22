@@ -1,9 +1,9 @@
 ---
 kind: concept
 name: "analogical distance"
-status: seedling
+status: growing
 added: "2026-08-22"
-sources: []
+sources: ["fu2013meaning", "uzzi2013atypical"]
 related_concepts: ["foreign-seed", "sampling-frame", "structure-mapping", "transfer-depth-ladder"]
 related_experiments: []
 tags: ["q1-choosing", "h3"]
@@ -25,6 +25,20 @@ far sources produce metaphor without mechanism, and a middle band is most
 productive. Hypothesis H3 tests whether that holds for LLM-assisted STEM
 work. If it does, the sampler should draw from a **distance band** rather
 than uniformly — "random" becomes "random within the useful band".
+
+[[fu2013meaning]] is the primary source of the "near vs. far" design
+literature (full text unreachable at ingest time — bot-blocked and
+paywalled; note is abstract/secondary-source only, flagged for re-fetch
+with institutional access before H3's power analysis). Independently,
+[[uzzi2013atypical]]'s bibliometric analysis of 17.9M papers gives
+large-N, real-world evidence for the same non-monotone shape at a
+different unit of analysis: the highest-impact papers combine an
+exceptionally *conventional* core of citations with an *atypical* fringe,
+not atypicality throughout — "hit" papers were twice as likely to have
+this mixed profile. It's a different mechanism (citation-combination
+novelty, not injected mechanism transfer) but the same "mixture beats
+purity" shape H3 predicts, which is independent corroboration worth citing
+when framing the expected result curve.
 
 ## Connections
 
