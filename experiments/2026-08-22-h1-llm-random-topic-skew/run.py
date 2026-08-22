@@ -3,13 +3,19 @@ import json, subprocess, sys, yaml
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+# Run every `claude -p` from a directory outside any research project: the
+# SessionEnd hook otherwise commits+pushes a journal line per call, and the
+# project CLAUDE.md would leak into the sub-call context.
+NEUTRAL = Path.home() / "projects" / ".claude-p-cwd"
+NEUTRAL.mkdir(parents=True, exist_ok=True)
+
 HERE = Path(__file__).resolve().parent
 cfg = yaml.safe_load((HERE / "config.yaml").read_text())
 
 
 def ask(model, prompt):
     r = subprocess.run(["claude", "-p", "--model", model, prompt],
-                       capture_output=True, text=True, timeout=120)
+                       capture_output=True, text=True, timeout=120, cwd=NEUTRAL)
     return {"ok": r.returncode == 0, "answer": r.stdout.strip(), "err": r.stderr.strip()[:200]}
 
 
