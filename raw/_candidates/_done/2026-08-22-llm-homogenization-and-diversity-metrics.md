@@ -95,13 +95,31 @@ n_returned: 12
 
 - INGESTED: 1. Generative AI enhances individual creativity but reduces the collective diversity of novel content — `literature/papers/doshi2024generative.md`
 - INGESTED: 2. Homogenization Effects of Large Language Models on Human Creative Ideation — `literature/papers/anderson2024homogenization.md`
-- DEFERRED: 3. Does Writing with Language Models Reduce Content Diversity? — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 3. Does Writing with Language Models Reduce Content Diversity? — `literature/papers/padmakumar2024does.md`
 - INGESTED: 4. Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity — `literature/papers/zhang2025verbalized.md`
-- DEFERRED: 5. We're Different, We're the Same: Creative Homogeneity Across LLMs — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 6. Diverse AI Personas Can Mitigate the Homogenization Effect in Human-AI Collaborative Ideation — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 7. Naming unrelated words predicts creativity (the Divergent Association Task) — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 8. Probing the Creativity of Large Language Models: Can models produce divergent semantic association? — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 9. Death of the Novel(ty): Beyond n-Gram Novelty as a Metric for Textual Creativity — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 5. We're Different, We're the Same: Creative Homogeneity Across LLMs — `literature/papers/wenger2025different.md`
+- INGESTED: 6. Diverse AI Personas Can Mitigate the Homogenization Effect in Human-AI Collaborative Ideation — `literature/papers/wan2026diverse.md`
+- INGESTED: 7. Naming unrelated words predicts creativity (the Divergent Association Task) — `literature/papers/olson2021naming.md`
+- INGESTED: 8. Probing the Creativity of Large Language Models: Can models produce divergent semantic association? — `literature/papers/chen2023probing.md`
+- INGESTED: 9. Death of the Novel(ty): Beyond n-Gram Novelty as a Metric for Textual Creativity — `literature/papers/saakyan2026death.md`
 - INGESTED: 10. NoveltyBench: Evaluating Language Models for Humanlike Diversity — `literature/papers/zhang2025noveltybench.md`
-- DEFERRED: 11. Automated Creativity Evaluation of Language Models Across Open-Ended Tasks — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 12. Are LLMs becoming similarly creative? Evidence from three years of models — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 11. Automated Creativity Evaluation of Language Models Across Open-Ended Tasks — `literature/papers/tan2026automated.md`
+- INGESTED: 12. Are LLMs becoming similarly creative? Evidence from three years of models — `literature/papers/patel2026similarly.md`
+
+### Re-curation 2026-08-22 (deferral pass)
+
+The first pass deferred 8 of 12 items as "secondary to the first ingest
+pass." This pass resolved all 8 — each was fetched, read, and ingested, so
+the file now has zero open items.
+
+- **Ingested (8):** `padmakumar2024does`, `wenger2025different`,
+  `wan2026diverse`, `olson2021naming`, `chen2023probing`,
+  `saakyan2026death`, `tan2026automated`, `patel2026similarly`.
+- **Declined: 0.** Every deferred item was on-mission — this was a
+  high-yield triage file.
+- All 12 URLs were re-verified live against the arXiv API / Crossref and
+  titles confirmed before ingest. Olson et al. (PNAS) is Cloudflare-blocked
+  at the publisher; full text came from the Europe PMC open-access copy
+  (PMC8237676), stored as `raw/papers/olson2021naming.md`.
+
+**Final totals: ingested=8, declined=0, already-in-graph=4.**
