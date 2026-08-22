@@ -5,7 +5,12 @@ principles; this file refines them for this project.
 
 ## What this project is about
 
-One or two sentences. Fill in when the project stops being exploratory.
+Strategies for forcing **cross-pollination** in LLM-assisted STEM work: when
+an LLM helps with a problem it defaults to the home field's canonical
+toolkit; we want a reproducible procedure that (a) picks a genuinely random
+*foreign* topic and (b) integrates it into the query so that mechanisms —
+not just vocabulary — transfer. End product: a reusable Claude Code skill.
+Plan + hypotheses: `docs/research-plan.md`. Scope decision: `docs/decisions/0001-*`.
 
 ## Layout (see user CLAUDE.md for the full rationale)
 
@@ -46,7 +51,14 @@ down or explicitly flag the need to raise a ceiling.
 
 ## Project-specific facts
 
-- Primary language: (fill in)
+- Primary language: Python (sampler + evaluation harness); prompts as Markdown.
+- LLM access: `claude -p` on the subscription (see user memory) — never a raw
+  API key. Pin `--model` in any unattended job.
+- Randomness is **external** to the LLM (OS RNG, seeded, logged in
+  `config.yaml`). Never ask the model to "pick a random field" except as the
+  baseline being measured.
+- Evaluation pairs novelty with usefulness (`concepts/novelty-usefulness-tradeoff.md`);
+  novelty alone is gameable.
 - Environment: managed by `uv`; run `make env` to sync.
 - Data: tracked by DVC. Large artifacts on SN850X via `~/projects/`.
 
