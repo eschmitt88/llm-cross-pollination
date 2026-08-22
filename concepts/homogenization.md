@@ -3,7 +3,7 @@ kind: concept
 name: "homogenization"
 status: growing
 added: "2026-08-22"
-sources: ["anderson2024homogenization", "doshi2024generative", "zhang2025noveltybench"]
+sources: ["anderson2024homogenization", "doshi2024generative", "zhang2025noveltybench", "padmakumar2024does", "wenger2025different", "wan2026diverse", "patel2026similarly", "carichon2026ideafix", "si2024can", "feng2025enhancing"]
 related_concepts: ["external-randomness", "foreign-seed", "novelty-usefulness-tradeoff"]
 related_experiments: []
 tags: ["problem", "evidence"]

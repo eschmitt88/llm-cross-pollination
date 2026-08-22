@@ -3,7 +3,7 @@ kind: concept
 name: "analogical distance"
 status: growing
 added: "2026-08-22"
-sources: ["fu2013meaning", "uzzi2013atypical"]
+sources: ["fu2013meaning", "uzzi2013atypical", "olson2021naming", "chan2018solvent", "wang2024scimon", "malthouse2021influence", "chan2011benefits"]
 related_concepts: ["foreign-seed", "sampling-frame", "structure-mapping", "transfer-depth-ladder"]
 related_experiments: []
 tags: ["q1-choosing", "h3"]

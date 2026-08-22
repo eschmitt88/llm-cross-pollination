@@ -3,7 +3,7 @@ kind: concept
 name: "external randomness"
 status: growing
 added: "2026-08-22"
-sources: ["zhao2026large", "coronadoblazquez2025deterministic", "zhang2025verbalized"]
+sources: ["zhao2026large", "coronadoblazquez2025deterministic", "zhang2025verbalized", "chen2023probing", "priem2022openalex", "malthouse2021influence"]
 related_concepts: ["foreign-seed", "sampling-frame", "homogenization", "verbalized-sampling"]
 related_experiments: []
 tags: ["q1-choosing", "h1"]

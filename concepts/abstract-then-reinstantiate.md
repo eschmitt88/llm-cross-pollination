@@ -3,7 +3,7 @@ kind: concept
 name: "abstract then reinstantiate"
 status: growing
 added: "2026-08-22"
-sources: ["jiang2024autotriz", "ding2023fluid", "yasunaga2023large"]
+sources: ["jiang2024autotriz", "ding2023fluid", "yasunaga2023large", "chan2018solvent", "fauconnier1998conceptual"]
 related_concepts: ["structure-mapping", "foreign-seed", "seed-brief-isolation", "transfer-depth-ladder", "analogical-prompting", "conceptual-blending"]
 related_experiments: []
 tags: ["q2-integrating", "prompt-strategy", "h2"]

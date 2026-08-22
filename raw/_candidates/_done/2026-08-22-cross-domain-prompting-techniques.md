@@ -95,13 +95,36 @@ n_returned: 12
 
 - INGESTED: 1. Large Language Models as Analogical Reasoners — `literature/papers/yasunaga2023large.md`
 - INGESTED: 2. Accelerating Innovation Through Analogy Mining — `literature/papers/hope2017accelerating.md`
-- DEFERRED: 3. SOLVENT: A Mixed Initiative System for Finding Analogies between Research Papers — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 3. SOLVENT: A Mixed Initiative System for Finding Analogies between Research Papers — `literature/papers/chan2018solvent.md`
 - INGESTED: 4. AutoTRIZ: Automating Engineering Innovation with TRIZ and Large Language Models — `literature/papers/jiang2024autotriz.md`
-- DEFERRED: 5. IDEAFix: Evaluation Framework for Creative Defixation Prompting in LLMs — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 6. Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 7. SciMON: Scientific Inspiration Machines Optimized for Novelty — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 8. Chain of Ideas: Revolutionizing Research via Novel Idea Development with LLM Agents — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 9. Nova: An Iterative Planning and Search Approach to Enhance Novelty and Diversity of LLM Generated Ideas — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 10. Enhancing Design Concept Diversity: Multi-Persona Prompting Strategies for Large Language Models — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 5. IDEAFix: Evaluation Framework for Creative Defixation Prompting in LLMs — `literature/papers/carichon2026ideafix.md`
+- INGESTED: 6. Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers — `literature/papers/si2024can.md`
+- INGESTED: 7. SciMON: Scientific Inspiration Machines Optimized for Novelty — `literature/papers/wang2024scimon.md`
+- DECLINED: 8. Chain of Ideas: Revolutionizing Research via Novel Idea Development with LLM Agents — declined — within-field trend progression, not cross-domain injection. It structures a literature *chain* to extrapolate the next step inside a field, which is the home-field default this project exists to break. Useful only as a rhetorical contrast; no design decision depends on it.
+- INGESTED: 9. Nova: An Iterative Planning and Search Approach to Enhance Novelty and Diversity of LLM Generated Ideas — `literature/papers/hu2024nova.md`
+- INGESTED: 10. Enhancing Design Concept Diversity: Multi-Persona Prompting Strategies for Large Language Models — `literature/papers/feng2025enhancing.md`
 - INGESTED: 11. PopBlends: Strategies for Conceptual Blending with Large Language Models — `literature/papers/wang2021popblends.md`
 - INGESTED: 12. Fluid Transformers and Creative Analogies: Exploring Large Language Models' Capacity for Augmenting Cross-Domain Analogical Creativity — `literature/papers/ding2023fluid.md`
+
+### Re-curation 2026-08-22 (deferral pass)
+
+The first pass deferred 7 of 12 items. This pass resolved all 7 — zero open
+items remain.
+
+- **Ingested (6):** `chan2018solvent`, `carichon2026ideafix`, `si2024can`,
+  `wang2024scimon`, `hu2024nova`, `feng2025enhancing`.
+- **Declined (1):** #8 *Chain of Ideas* — within-field trend progression
+  rather than cross-domain injection; it is the home-field default this
+  project exists to break, so it earns a contrast mention at most.
+- **Fetch note:** SOLVENT (#3) is open access per Unpaywall but the ACM DL
+  PDF is Cloudflare-blocked and three author-site mirrors 404'd; its note is
+  written from the complete publisher abstract and is flagged
+  abstract-only. All other ingests have full PDFs in `raw/papers/`.
+
+**Highlight — #10 (Feng et al.) turned out to be H6 prior art.** It compares
+*parallel* / *collective* / *sequential* multi-persona prompting and finds
+parallel and sequential beat collective — i.e. separate contexts beat one
+shared context. That is independent support for `seed-brief-isolation` and
+for H6, which the triage summary did not flag.
+
+**Final totals: ingested=6, declined=1, already-in-graph=5.**

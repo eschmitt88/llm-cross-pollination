@@ -95,13 +95,52 @@ n_returned: 12
 
 - INGESTED: 1. Directed Diversity: Leveraging Language Embedding Distances for Collective Creativity in Crowd Ideation — `literature/papers/cox2021directed.md`
 - INGESTED: 2. The Meaning of "Near" and "Far": The Impact of Structuring Design Databases and the Effect of Distance of Analogy on Design Output (Fu, Chan, Cagan, Kotovsky, Schunn, Wood) — `literature/papers/fu2013meaning.md`
-- DEFERRED: 3. On the Benefits and Pitfalls of Analogies for Innovative Design: Ideation Performance Based on Analogical Distance, Commonness, and Modality of Examples (Chan, Fu, Schunn, Cagan, Wood, Kotovsky) — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 3. On the Benefits and Pitfalls of Analogies for Innovative Design: Ideation Performance Based on Analogical Distance, Commonness, and Modality of Examples (Chan, Fu, Schunn, Cagan, Wood, Kotovsky) — `literature/papers/chan2011benefits.md`
 - INGESTED: 4. Large Language Models Are Bad Dice Players: LLMs Struggle to Generate Random Numbers from Statistical Distributions — `literature/papers/zhao2026large.md`
 - INGESTED: 5. Deterministic or Probabilistic? The Psychology of LLMs as Random Number Generators — `literature/papers/coronadoblazquez2025deterministic.md`
 - INGESTED: 6. Atypical Combinations and Scientific Impact (Uzzi, Mukherjee, Stringer, Jones) — `literature/papers/uzzi2013atypical.md`
 - INGESTED: 7. Structure-Mapping: A Theoretical Framework for Analogy (Gentner, 1983) — `literature/papers/gentner1983structuremapping.md`
-- DEFERRED: 8. OpenAlex: A Fully-Open Index of Scholarly Works, Authors, Venues, Institutions, and Concepts — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 9. A Random Walk Sampling on Knowledge Graphs for Semantic-Oriented Statistical Tasks — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 10. The Influence of Exposure to Randomness on Lateral Thinking in Divergent, Convergent, and Creative Search — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 11. Conceptual Integration Networks (Fauconnier & Turner, 1998) — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
-- DEFERRED: 12. The Act of Creation (Koestler, 1964) — bisociation — deferred — secondary to the first ingest pass; re-curate after the H2 bake-off if the evaluation or prompting design needs it
+- INGESTED: 8. OpenAlex: A Fully-Open Index of Scholarly Works, Authors, Venues, Institutions, and Concepts — `literature/papers/priem2022openalex.md`
+- DECLINED: 9. A Random Walk Sampling on Knowledge Graphs for Semantic-Oriented Statistical Tasks — declined — off the chosen design path. `xpol` samples a flat/stratified OpenAlex topic frame (see priem2022openalex), not knowledge-graph walks, so the drift failure mode this paper fixes does not arise. Also paywalled (Elsevier, not OA). Revisit only if the frame changes to a graph walk.
+- INGESTED: 10. The Influence of Exposure to Randomness on Lateral Thinking in Divergent, Convergent, and Creative Search — `literature/papers/malthouse2021influence.md`
+- INGESTED: 11. Conceptual Integration Networks (Fauconnier & Turner, 1998) — `literature/papers/fauconnier1998conceptual.md`
+- DECLINED: 12. The Act of Creation (Koestler, 1964) — bisociation — declined — tertiary source. The URL is the Wikipedia article *about* Koestler's 1964 book, not the book or any primary text. Bisociation as a mechanism is already covered by fauconnier1998conceptual and gentner1983structuremapping, both primary and both ingested.
+
+### Re-curation 2026-08-22 (deferral pass)
+
+The first pass deferred 6 of 12 items. This pass resolved all 6 — zero open
+items remain.
+
+- **Ingested (4):** `chan2011benefits`, `priem2022openalex`,
+  `malthouse2021influence`, `fauconnier1998conceptual`.
+- **Declined (2):** #9 *Random Walk Sampling on Knowledge Graphs* — off the
+  chosen design path (`xpol` samples a stratified OpenAlex topic frame, not
+  graph walks) and paywalled; #12 *The Act of Creation* — the URL is the
+  Wikipedia article *about* Koestler's book, a tertiary source, and
+  bisociation is already covered by two ingested primary sources.
+
+**⚠️ Highlight — #10 (Malthouse et al., _Cognition_) is a NULL RESULT and the
+triage summary mischaracterized it.** The triage described it as a "direct
+empirical test of 'random foreign stimulus improves problem solving'" without
+noting the direction. The actual finding: across 592 pre-registered
+participants and three tasks, random Wikipedia stimuli produced **no
+improvement and often significant impairment**, with a Bayesian meta-analysis
+giving strong support for the null. The authors conclude random stimuli must
+be "sufficiently task-related or 'optimally random'" to help.
+
+This is disconfirming for the naive version of the project's premise (that a
+foreign seed helps by mere juxtaposition) and is the strongest argument in
+the corpus that the *integration* step, not the *injection*, is where the
+value must come from. It also independently restates H3's useful-distance
+band from a human-subjects direction. It should be cited in
+`docs/research-plan.md` as the disconfirming prior, and the "raw seed, no
+integration" condition should become an explicit control arm in H2.
+
+- **Fetch notes:** #3 (Chan et al. 2011) is paywalled with no abstract
+  available anywhere — its note is explicitly marked inference-only, matching
+  the existing `fu2013meaning` precedent, and both should be pulled together
+  via institutional access. #11 (Fauconnier & Turner) — the markturner.org
+  URL serves only a landing stub, so its note is flagged as written from
+  established secondary understanding.
+
+**Final totals: ingested=4, declined=2, already-in-graph=6.**

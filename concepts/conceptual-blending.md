@@ -3,7 +3,7 @@ kind: concept
 name: "conceptual blending"
 status: seedling
 added: "2026-08-22"
-sources: ["wang2021popblends"]
+sources: ["wang2021popblends", "fauconnier1998conceptual"]
 related_concepts: ["seed-brief-isolation", "abstract-then-reinstantiate", "foreign-seed"]
 related_experiments: []
 tags: ["q2-integrating", "prompt-strategy"]

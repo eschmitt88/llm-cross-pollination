@@ -3,7 +3,7 @@ kind: concept
 name: "seed brief isolation"
 status: growing
 added: "2026-08-22"
-sources: ["wang2021popblends"]
+sources: ["wang2021popblends", "carichon2026ideafix", "feng2025enhancing"]
 related_concepts: ["abstract-then-reinstantiate", "foreign-seed", "homogenization", "conceptual-blending"]
 related_experiments: []
 tags: ["q2-integrating", "prompt-strategy", "h6"]

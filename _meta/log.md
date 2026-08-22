@@ -41,3 +41,6 @@ skills; read by `/lint`.
 2026-08-22 03:00 curate: 3 triage files → _done/ (15 ingested, 21 deferred)
 2026-08-22 03:02 promote-moc choosing-the-seed (6 concepts)
 2026-08-22 03:02 promote-moc integrating-the-seed (8 concepts)
+2026-08-22 03:06 curate 2026-08-22-llm-homogenization-and-diversity-metrics.md ingested=8 declined=0 dup=4
+2026-08-22 03:15 curate 2026-08-22-cross-domain-prompting-techniques.md ingested=6 declined=1 dup=5
+2026-08-22 03:15 curate 2026-08-22-random-topic-sampling-and-analogical-distance.md ingested=4 declined=2 dup=6

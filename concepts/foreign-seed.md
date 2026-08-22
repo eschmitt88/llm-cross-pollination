@@ -3,7 +3,7 @@ kind: concept
 name: "foreign seed"
 status: growing
 added: "2026-08-22"
-sources: ["uzzi2013atypical"]
+sources: ["uzzi2013atypical", "wan2026diverse", "wang2024scimon", "hu2024nova", "feng2025enhancing", "priem2022openalex", "malthouse2021influence", "chan2011benefits"]
 related_concepts: ["sampling-frame", "external-randomness", "analogical-distance", "abstract-then-reinstantiate", "transfer-depth-ladder"]
 related_experiments: []
 tags: ["core", "q1-choosing", "q2-integrating"]

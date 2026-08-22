@@ -3,7 +3,7 @@ kind: concept
 name: "transfer depth ladder"
 status: growing
 added: "2026-08-22"
-sources: ["hope2017accelerating", "zhang2025noveltybench", "yasunaga2023large"]
+sources: ["hope2017accelerating", "zhang2025noveltybench", "yasunaga2023large", "saakyan2026death"]
 related_concepts: ["structure-mapping", "novelty-usefulness-tradeoff", "foreign-seed"]
 related_experiments: []
 tags: ["evaluation", "q2-integrating"]

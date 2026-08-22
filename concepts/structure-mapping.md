@@ -3,7 +3,7 @@ kind: concept
 name: "structure mapping"
 status: growing
 added: "2026-08-22"
-sources: ["gentner1983structuremapping"]
+sources: ["gentner1983structuremapping", "chan2018solvent", "malthouse2021influence", "fauconnier1998conceptual"]
 related_concepts: ["analogical-distance", "abstract-then-reinstantiate", "transfer-depth-ladder"]
 related_experiments: []
 tags: ["q2-integrating", "theory"]

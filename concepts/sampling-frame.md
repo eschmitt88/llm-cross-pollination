@@ -3,7 +3,7 @@ kind: concept
 name: "sampling frame"
 status: growing
 added: "2026-08-22"
-sources: ["cox2021directed"]
+sources: ["cox2021directed", "wenger2025different", "priem2022openalex"]
 related_concepts: ["foreign-seed", "external-randomness", "analogical-distance", "directed-diversity"]
 related_experiments: []
 tags: ["q1-choosing"]

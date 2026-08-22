@@ -3,7 +3,7 @@ kind: concept
 name: "novelty–usefulness trade-off"
 status: growing
 added: "2026-08-22"
-sources: ["doshi2024generative", "zhang2025noveltybench"]
+sources: ["doshi2024generative", "zhang2025noveltybench", "wan2026diverse", "olson2021naming", "saakyan2026death", "tan2026automated", "carichon2026ideafix", "si2024can", "wang2024scimon", "hu2024nova", "chan2011benefits"]
 related_concepts: ["transfer-depth-ladder", "homogenization", "analogical-distance"]
 related_experiments: []
 tags: ["evaluation"]
