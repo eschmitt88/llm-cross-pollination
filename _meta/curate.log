@@ -1,0 +1,27 @@
+Curation complete — the uncurated pile is empty, everything committed and pushed.
+
+## What I actually found when I started
+
+A prior pass (commit `6f415a1`, 03:00:57) had already archived all three triage files, but it resolved only 15 of 36 items and marked **21 as `DEFERRED`** — "secondary to the first ingest pass." Deferred items in an archived file are invisible to `/lint`, so they read as done while being open. Closing those was the real work.
+
+**Result: 18 ingested, 3 declined, 15 already in graph, 0 deferred.** Literature notes went 15 → 33; all 14 concepts are now sourced (previously several were not).
+
+## Two findings that change the research plan
+
+**1. The `Cognition` paper is a null result, and the triage summary hid it.** The triage described Malthouse et al. as a "direct empirical test of *random foreign stimulus improves problem solving*" — omitting the direction. The actual finding, pre-registered, n=592, three tasks, three scoring methods: **no improvement, often significant impairment**, with a Bayesian meta-analysis strongly supporting the null (BF10 = 0.24–0.82 throughout).
+
+This disconfirms the naive premise that a foreign seed helps by mere juxtaposition — the burden now sits entirely on the integration step. It doesn't refute the project: the authors' conclusion that stimuli must be "sufficiently task-related or *optimally random*" independently restates H3's useful-distance band from a human-subjects direction. I'd recommend citing it in `docs/research-plan.md` as the disconfirming prior and making "raw seed, no integration" an explicit H2 control arm — that paper predicts it fails, so if yours beats baseline, the delta *is* the finding.
+
+**2. Feng et al. is unflagged H6 prior art.** It compares parallel / collective / sequential multi-persona prompting and finds parallel and sequential beat collective — separate contexts beat one shared context. That's independent support for `seed-brief-isolation`, and its three-way taxonomy is a cleaner arm structure for H6 than the current binary isolated-vs-joint split.
+
+Also worth noting: Si et al. found **LLM self-evaluation fails**, and Saakyan et al. found ~91% of top-quartile n-gram-novel spans aren't judged creative. Both converge on the same H2 constraint — don't let the generating model judge, and don't use lexical novelty as the outcome measure, since it would reward exactly the vocabulary-level pseudo-transfer H2 exists to detect.
+
+## Two things you should know
+
+**I hit a write race and briefly clobbered a file.** I am the `research-curate-sweep.sh` 03:00 cron invocation, and a separate autonomous session (PID 95317) was curating the same files concurrently. It moved a file to `_done/` between my read and my write, so my append created a stub that overwrote the archived copy. I caught it, restored from git (`git checkout`), and verified all three files intact at 125/130/146 lines with 0 deferrals. No content was lost. I also left the h2-bakeoff files (`run.py`, `log.md`, `results/gen/`) unstaged — they belong to that session, which is still running.
+
+The underlying hazard is real: the sweep doesn't guard against a repo already being worked. Worth a lockfile if these keep overlapping.
+
+**Three papers I could not fetch**, with notes explicitly flagged rather than silently thin — following your existing `fu2013meaning` precedent: SOLVENT (open access but Cloudflare-blocked at ACM; written from the full publisher abstract), Chan et al. 2011 (paywalled, *no abstract available anywhere* — marked inference-only), and Fauconnier & Turner (URL serves a 3.8 KB landing stub; written from established secondary understanding). Chan 2011 and `fu2013meaning` sit behind the same ASME paywall and both feed H3 — worth pulling together with institutional access before H3's design is finalized.
+
+I skipped `/promote-moc`: both MoCs already exist and cover all 14 concepts, and I added sources rather than new concepts, so nothing new could have ripened.

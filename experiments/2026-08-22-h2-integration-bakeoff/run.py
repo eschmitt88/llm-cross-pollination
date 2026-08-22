@@ -21,11 +21,22 @@ GEN = HERE / "results" / "gen"; GEN.mkdir(parents=True, exist_ok=True)
 JUD = HERE / "results" / "judgments.jsonl"
 
 
-def call(model, prompt):
-    r = subprocess.run(["claude", "-p", "--model", model, prompt], capture_output=True, text=True, timeout=600, cwd=NEUTRAL)
-    if r.returncode != 0:
-        raise RuntimeError(f"{model} failed: {r.stdout[:200]} {r.stderr[:200]}")
-    return r.stdout.strip()
+class Refused(Exception):
+    """API-side safety refusal — terminal for this job, never retried."""
+
+
+def call(model, prompt, retries=2):
+    import time
+    for attempt in range(retries + 1):
+        r = subprocess.run(["claude", "-p", "--model", model, prompt], capture_output=True, text=True, timeout=600, cwd=NEUTRAL)
+        if r.returncode == 0:
+            return r.stdout.strip()
+        msg = (r.stdout + r.stderr)[:300]
+        if "can't help with this" in msg or "usage policy" in msg.lower():
+            raise Refused(msg)
+        if attempt < retries:
+            time.sleep(20 * (attempt + 1))
+    raise RuntimeError(f"{model} failed: {msg}")
 
 
 def stable_seed(pid):
@@ -63,13 +74,26 @@ def generate(job):
     if job["strategy"] == "abstract-reinstantiate-brief":
         bpath = GEN / f"brief__{job['pid']}__{job['si']}.txt"
         if not bpath.exists():
-            bpath.write_text(call(cfg["generator"], render("brief", "", job["seed"])))
+            try:
+                bpath.write_text(call(cfg["generator"], render("brief", "", job["seed"])))
+            except Refused as e:
+                out.write_text(json.dumps({"pid": job["pid"], "strategy": job["strategy"], "si": job["si"],
+                                           "seed": job["seed"].__dict__, "prompt": None, "proposal": None,
+                                           "refused": "brief: " + str(e)[:300]}, indent=1, default=str))
+                print(f"  REFUSED brief {key}", flush=True); return key
         brief = bpath.read_text()
     prompt = job["prompt"] or render(job["strategy"], p["text"], job["seed"], brief=brief)
-    proposal = call(cfg["generator"], prompt)
-    out.write_text(json.dumps({"pid": job["pid"], "strategy": job["strategy"], "si": job["si"],
-                               "seed": None if job["seed"] is None else job["seed"].__dict__,
-                               "prompt": prompt, "proposal": proposal}, indent=1, default=str))
+    rec = {"pid": job["pid"], "strategy": job["strategy"], "si": job["si"],
+           "seed": None if job["seed"] is None else job["seed"].__dict__, "prompt": prompt}
+    try:
+        rec["proposal"] = call(cfg["generator"], prompt)
+    except Refused as e:
+        rec["proposal"] = None; rec["refused"] = str(e)[:300]
+        print(f"  REFUSED {key}: {str(e)[:80]}", flush=True)
+    except Exception as e:
+        print(f"  ERROR {key}: {e}", flush=True)
+        return None
+    out.write_text(json.dumps(rec, indent=1, default=str))
     return key
 
 
@@ -78,12 +102,20 @@ def judge(key):
     if key in done:
         return
     g = json.loads((GEN / f"{key}.json").read_text())
+    if not g.get("proposal"):
+        with open(JUD, "a") as f:
+            f.write(json.dumps({"key": key, "pid": g["pid"], "strategy": g["strategy"], "si": g["si"],
+                                "refused": True}) + "\n")
+        return
     p = next(x for x in problems if x["id"] == g["pid"])
     seed_name = g["seed"]["name"] if g["seed"] else "(no seed — baseline; score transfer_depth 0)"
     seed_path = g["seed"]["path"] if g["seed"] else "n/a"
     jp = (PROMPTS / "judge.md").read_text().format(problem=p["text"].strip(), seed_name=seed_name,
                                                    seed_path=seed_path, proposal=g["proposal"])
-    raw = call(cfg["judge"], jp)
+    try:
+        raw = call(cfg["judge"], jp)
+    except Exception as e:
+        print(f"  JUDGE ERROR {key}: {str(e)[:80]}", flush=True); return
     txt = raw[raw.find("{"): raw.rfind("}") + 1]
     try:
         j = json.loads(txt)
@@ -97,7 +129,7 @@ print(f"{len(jobs)} generations", flush=True)
 with ThreadPoolExecutor(cfg["parallel"]) as ex:
     keys = []
     for i, k in enumerate(ex.map(generate, jobs)):
-        keys.append(k)
+        if k: keys.append(k)
         if (i + 1) % 10 == 0:
             print(f"  gen {i+1}/{len(jobs)}", flush=True)
 print("judging", flush=True)
