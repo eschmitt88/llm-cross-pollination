@@ -39,3 +39,5 @@ skills; read by `/lint`.
 2026-08-22 02:57 fetch-paper https://arxiv.org/abs/2504.05228 → raw/papers/zhang2025noveltybench.pdf
 2026-08-22 02:57 ingest raw/papers/zhang2025noveltybench.pdf
 2026-08-22 03:00 curate: 3 triage files → _done/ (15 ingested, 21 deferred)
+2026-08-22 03:02 promote-moc choosing-the-seed (6 concepts)
+2026-08-22 03:02 promote-moc integrating-the-seed (8 concepts)

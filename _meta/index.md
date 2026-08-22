@@ -15,13 +15,9 @@ and `/new-experiment`.
 
 ## Maps of Content
 
-(promote a cluster of ≥5 related concepts into `mocs/<theme>.md`)
+- `mocs/choosing-the-seed.md` — Q1: frame, external RNG, distance, directed diversity (H1 closed)
+- `mocs/integrating-the-seed.md` — Q2: structure mapping → abstract-reinstantiate / isolated brief → transfer-depth ladder (H2 running)
 
-Two clusters are already forming and will be MoC candidates once the
-concepts have sources: **choosing the seed** (foreign-seed, sampling-frame,
-external-randomness, analogical-distance) and **integrating the seed**
-(structure-mapping, abstract-then-reinstantiate, seed-brief-isolation,
-transfer-depth-ladder).
 
 ## Active experiments
 
