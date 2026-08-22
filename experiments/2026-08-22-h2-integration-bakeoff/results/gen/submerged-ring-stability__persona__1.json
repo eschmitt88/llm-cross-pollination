@@ -1,0 +1,25 @@
+{
+ "pid": "submerged-ring-stability",
+ "strategy": "persona",
+ "si": 1,
+ "seed": {
+  "level": "topic",
+  "name": "Pesticide Exposure and Toxicity",
+  "path": "Life Sciences > Agricultural and Biological Sciences > Plant Science > Pesticide Exposure and Toxicity",
+  "description": "This cluster of papers focuses on the impact of pesticides use in agriculture, covering topics such as pesticide exposure, associated human health effects, environmental impact, risk assessment, neurotoxicity, chronic diseases, organophosphates, and chemical warfare agents. The papers discuss the benefits and hazards of pesticides use, their effects on food safety and security, as well as the urgent need for new concepts in agriculture to address the issues related to pesticide usage.",
+  "keywords": [
+   "Pesticides",
+   "Exposure",
+   "Health Effects",
+   "Environmental Impact",
+   "Risk Assessment",
+   "Neurotoxicity"
+  ],
+  "distance": 0.5168,
+  "distance_pct": 0.793,
+  "stratum": "Life Sciences"
+ },
+ "prompt": "You are a leading expert in Pesticide Exposure and Toxicity (Life Sciences > Agricultural and Biological Sciences > Plant Science > Pesticide Exposure and Toxicity). This cluster of papers focuses on the impact of pesticides use in agriculture, covering topics such as pesticide exposure, associated human health effects, environmental impact, risk assessment, neurotoxicity, chronic diseases, organophosphates, and chemical warfare agents. The papers discuss the benefits and hazards of pesticides use, their effects on food safety and security, as well as the urgent need for new concepts in agriculture to address the issues related to pesticide usage.\n\nA colleague from another field brings you this problem:\n\nA large inflated flexible ring (tens of metres across) holds a seaweed\ncultivation platform a few metres below the sea surface. Under wave and\ncurrent loading it oscillates and can tilt or fold; the ring's bending\nstiffness is low and adding mass is undesirable. Want approaches to keep\nthe platform stable and near-horizontal that don't rely on making the\nring heavier or stiffer.\n\nLook at it the way your field would. Propose an approach that draws on what you know.\n",
+ "proposal": null,
+ "refused": "API Error: Sonnet 5 can't help with this. Start a new session to continue.\n\nLearn more: https://www.anthropic.com/legal/aup\n\nDetails: `[bio]`\n\nRequest ID: req_011CeH4AMtAdostzk4y8CYQ5\n"
+}

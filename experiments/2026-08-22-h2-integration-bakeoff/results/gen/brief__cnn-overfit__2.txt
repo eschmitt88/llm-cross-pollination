@@ -1,0 +1,31 @@
+# Economic and Business Studies — Technical Brief
+
+This cluster spans globalization, macro policy, public health/COVID-19 economics, trade, leadership, financial stability, regional development, organizational economics, and sustainable development. Despite the topical breadth, practitioners in this space rely on a common toolkit for isolating causal effects, propagating shocks across systems, and managing risk-return trade-offs under uncertainty.
+
+1. **Difference-in-Differences (DiD) / Event-Study Estimation**
+   Used to estimate the causal effect of a policy or shock (lockdown, trade agreement, regulatory change) by comparing outcome changes in a treated group against a control group over time, netting out common trends. The key causal story: any confounder that affects both groups equally is differenced away, leaving only the treatment-specific deviation. Trade-off: validity hinges on the parallel-trends assumption, which becomes fragile with staggered adoption timing.
+   Standard form: `Y_it = α_i + λ_t + β(Treat_i × Post_t) + ε_it`, where β is the causal estimate; event-study variants replace `Post_t` with a set of lead/lag dummies to test pre-trends.
+
+2. **Vector Autoregression (VAR) / Impulse Response Analysis**
+   Models a system of interdependent macro variables (GDP, inflation, exchange rates, public health spending) where each variable is a linear function of its own and others' lagged values, capturing feedback loops without imposing strong theoretical structure. Impulse response functions trace how a one-time shock (e.g., a COVID case surge or interest-rate hike) propagates through the system over subsequent periods. Trade-off: flexibility versus identification — structural shocks require additional restrictions (Cholesky ordering, sign restrictions) to be interpreted causally.
+   Standard form: `Y_t = c + Σ_{i=1}^{p} A_i Y_{t-i} + ε_t`, with impulse responses computed from the moving-average representation.
+
+3. **Gravity Model of Trade**
+   Explains bilateral trade flows as increasing in the economic "mass" (GDP) of two countries and decreasing in the "distance" (transport cost, tariffs, cultural/institutional barriers) between them, by analogy to Newtonian gravity. It is the workhorse for quantifying how trade agreements, globalization, or disruptions (e.g., pandemic border closures) shift trade volumes, holding size effects constant. Trade-off: omitted multilateral resistance terms bias distance/policy coefficients unless country-pair fixed effects are included.
+   Standard form: `T_ij = G · (Y_i^β1 · Y_j^β2) / D_ij^β3`, typically estimated in log-linear or PPML form: `ln T_ij = β0 + β1 ln Y_i + β2 ln Y_j − β3 ln D_ij + X_ij + ε_ij`.
+
+4. **Value-at-Risk (VaR) and Stress Testing**
+   Quantifies the maximum expected loss on a portfolio or institution's balance sheet at a given confidence level over a defined horizon, used by banks and regulators to size capital buffers against financial-stability risk. Stress testing extends this by simulating extreme but plausible scenarios (systemic shocks, sovereign defaults) rather than relying on historical distributions alone. Trade-off: VaR understates tail risk when return distributions are fat-tailed or correlations spike during crises (correlation breakdown).
+   Standard form: `P(Loss > VaR_α) = 1 − α`, e.g., `VaR_α = μ − z_α·σ` under a normal approximation, with `z_α` the α-quantile of the standard normal.
+
+5. **Epidemiological-Economic (SIR-Macro) Coupling**
+   Links a compartmental disease model (Susceptible-Infected-Recovered) to an economic production/labor-supply block so that infection dynamics reduce effective labor and consumption, while economic activity (mobility, contact rates) in turn feeds back into transmission. This mechanism formalizes the COVID-era health-versus-economy trade-off: stricter containment lowers infections but compounds output loss, and the optimal policy path balances the two objectives dynamically. Trade-off: the containment-output frontier is convex, so marginal health gains from stricter lockdowns come at rising economic cost.
+   Standard form: `dS/dt = −βSI/N, dI/dt = βSI/N − γI, dR/dt = γI`, with β made a function of an economic/mobility control variable and output modeled as `Y_t = A_t · f(L_t^eff, K_t)` where `L_t^eff` falls with infection prevalence.
+
+6. **Instrumental Variables (IV) / Two-Stage Least Squares (2SLS)**
+   Addresses endogeneity — reverse causality or omitted variables — in relationships like leadership quality→firm performance or institutional quality→growth, by using an instrument correlated with the endogenous regressor but uncorrelated with the outcome except through it. The first stage isolates the "exogenous" variation in the regressor; the second stage uses the predicted values to estimate an unbiased causal effect. Trade-off: instrument relevance (strong first-stage F-statistic) must be balanced against the exclusion restriction, which is untestable and often the weakest link.
+   Standard form: Stage 1: `X_i = π0 + π1 Z_i + v_i`; Stage 2: `Y_i = β0 + β1 X̂_i + u_i`, where Z is the instrument.
+
+7. **Real Options / Discounted Cash Flow (DCF) Analysis under Uncertainty**
+   Governs organizational and regional investment decisions (capacity expansion, sustainable-development projects) by valuing the flexibility to delay, expand, or abandon a project as market or policy uncertainty resolves, rather than committing on a static net-present-value basis. It captures the causal insight that irreversibility plus uncertainty creates option value, so firms rationally wait even when expected NPV is positive. Trade-off: waiting preserves optionality but sacrifices early-mover advantage and near-term cash flows.
+   Standard form: `NPV = Σ_{t=0}^{T} CF_t / (1+r)^t`; real-option value added via `V = max(NPV_immediate, E[NPV_deferred] · e^{-rT} − Investment)`, often solved with binomial-lattice or Black-Scholes-style option pricing.

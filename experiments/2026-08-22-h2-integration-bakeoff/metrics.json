@@ -1,1 +1,106 @@
-{}
+{
+  "abstract-reinstantiate": {
+    "n": 17,
+    "transfer_depth_mean": 2.94,
+    "transfer_depth_ge3": 0.76,
+    "usefulness_mean": 2.18,
+    "usefulness_ge3": 0.18,
+    "home_field_default_rate": 0.94,
+    "depth3plus_and_useful3plus": 0.18
+  },
+  "abstract-reinstantiate-brief": {
+    "n": 17,
+    "transfer_depth_mean": 3.29,
+    "transfer_depth_ge3": 0.88,
+    "usefulness_mean": 2.29,
+    "usefulness_ge3": 0.29,
+    "home_field_default_rate": 0.94,
+    "depth3plus_and_useful3plus": 0.29
+  },
+  "naive": {
+    "n": 17,
+    "transfer_depth_mean": 2.12,
+    "transfer_depth_ge3": 0.41,
+    "usefulness_mean": 2.24,
+    "usefulness_ge3": 0.24,
+    "home_field_default_rate": 0.94,
+    "depth3plus_and_useful3plus": 0.24
+  },
+  "none": {
+    "n": 6,
+    "transfer_depth_mean": 0,
+    "transfer_depth_ge3": 0.0,
+    "usefulness_mean": 2.17,
+    "usefulness_ge3": 0.17,
+    "home_field_default_rate": 1.0,
+    "depth3plus_and_useful3plus": 0.0
+  },
+  "persona": {
+    "n": 17,
+    "transfer_depth_mean": 2.29,
+    "transfer_depth_ge3": 0.41,
+    "usefulness_mean": 2.24,
+    "usefulness_ge3": 0.24,
+    "home_field_default_rate": 0.94,
+    "depth3plus_and_useful3plus": 0.24
+  },
+  "unconventional": {
+    "n": 6,
+    "transfer_depth_mean": 0,
+    "transfer_depth_ge3": 0.0,
+    "usefulness_mean": 2.5,
+    "usefulness_ge3": 0.5,
+    "home_field_default_rate": 1.0,
+    "depth3plus_and_useful3plus": 0.0
+  },
+  "_per_problem_depth": {
+    "cnn-overfit": {
+      "none": 0,
+      "unconventional": 0,
+      "persona": 3,
+      "abstract-reinstantiate": 4,
+      "naive": 3,
+      "abstract-reinstantiate-brief": 3.7
+    },
+    "clay-vessel-bending": {
+      "none": 0,
+      "naive": 1.5,
+      "unconventional": 0,
+      "persona": 1.7,
+      "abstract-reinstantiate": 2,
+      "abstract-reinstantiate-brief": 2.3
+    },
+    "submerged-ring-stability": {
+      "none": 0,
+      "unconventional": 0,
+      "naive": 1.3,
+      "abstract-reinstantiate": 2.3,
+      "persona": 1.5,
+      "abstract-reinstantiate-brief": 3.5
+    },
+    "game-outcome-drift": {
+      "none": 0,
+      "unconventional": 0,
+      "naive": 2.7,
+      "abstract-reinstantiate-brief": 4,
+      "abstract-reinstantiate": 3,
+      "persona": 3
+    },
+    "rl-sample-efficiency": {
+      "none": 0,
+      "unconventional": 0,
+      "persona": 2,
+      "naive": 2,
+      "abstract-reinstantiate": 3,
+      "abstract-reinstantiate-brief": 3.3
+    },
+    "ecg-artifact": {
+      "none": 0,
+      "unconventional": 0,
+      "naive": 2,
+      "abstract-reinstantiate": 3,
+      "abstract-reinstantiate-brief": 3,
+      "persona": 2.3
+    }
+  }
+}

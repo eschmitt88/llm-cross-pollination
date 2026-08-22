@@ -1,7 +1,7 @@
 ---
 kind: plan
 name: research-plan
-status: draft
+status: active
 added: "2026-08-22"
 updated: "2026-08-22"
 ---
@@ -38,12 +38,12 @@ corresponding to the two halves of the project:
 
 | id | hypothesis | how we would know |
 |----|-----------|-------------------|
-| H1 | Asking the model to "pick a random field" yields a heavily skewed distribution (a few favourite fields, entropy far below uniform over any reasonable taxonomy). External sampling is necessary, not optional. | Sample N≈500 "random discipline" answers at several temperatures / phrasings; compute entropy and top-k mass vs. uniform over the chosen taxonomy. Cheap, do first. |
-| H2 | Integration strategy dominates topic choice: naive "incorporate ideas from X" produces vocabulary-level transfer; abstract-then-reinstantiate produces mechanism-level transfer with the *same* seeds. | Bake-off across strategies on a fixed problem set and fixed seed list; rate each output on the transfer-depth ladder (LLM judge + human spot check). |
+| H1 ✓ | Asking the model to "pick a random field" yields a heavily skewed distribution (a few favourite fields, entropy far below uniform over any reasonable taxonomy). External sampling is necessary, not optional. | Sample N≈500 "random discipline" answers at several temperatures / phrasings; compute entropy and top-k mass vs. uniform over the chosen taxonomy. Cheap, do first. |
+| H2 ✓ | Integration strategy dominates topic choice: naive "incorporate ideas from X" produces vocabulary-level transfer; abstract-then-reinstantiate produces mechanism-level transfer with the *same* seeds. | Bake-off across strategies on a fixed problem set and fixed seed list; rate each output on the transfer-depth ladder (LLM judge + human spot check). |
 | H3 | There is a useful-distance band ("far but not too far"): near seeds add nothing, very far seeds give metaphor only, mid-distance seeds give the most mechanism-level transfers. | Sweep seeds binned by embedding / taxonomy-hop distance from the problem; plot transfer depth and usefulness vs. distance. |
 | H4 | Method-level seeds (a specific technique or phenomenon: "retrosynthesis", "Ziegler–Natta catalysis") transfer better than field-level seeds ("organic chemistry"). | Same bake-off with granularity as a factor. |
 | H5 | Multiple seeds + selection (generate k, critic picks/merges) beats a single seed at equal token cost once k ≥ 3, and beats a "just be creative" / high-temperature baseline. | Tournament arm vs. single-seed arm vs. baselines, same judge. |
-| H6 | Generating the foreign-domain brief in a *separate* context (no sight of the target problem) and then injecting it yields more genuine transfer than asking one context to do both, because the model otherwise retrieves only the parts of X that already resemble the problem. | Isolation arm vs. joint arm. |
+| H6 ✓(p=0.07) | Generating the foreign-domain brief in a *separate* context (no sight of the target problem) and then injecting it yields more genuine transfer than asking one context to do both, because the model otherwise retrieves only the parts of X that already resemble the problem. | Isolation arm vs. joint arm. |
 
 ## Design space
 
@@ -119,6 +119,10 @@ Prompt strategies, each a Markdown template under `prompts/`:
    (`/cross-pollinate <problem> [--distance band] [--k N]`) proposed to
    `claude-system` via `/elevate`. That skill is the deliverable; everything
    above is how we earn the right to write it.
+
+## Status (2026-08-22)
+
+H1 confirmed (sampler necessary), H2 confirmed (abstract-reinstantiate ≫ naive ≈ persona), H6 directionally confirmed (problem-blind brief +0.35 depth). New finding: transfer is mostly *rediscovery* — 94% of proposals judged reachable by the home field; only ~6% foreign *and* useful. Method v0.1 in `docs/method.md`; skill in `skill/cross-pollinate/`. Next: H5 (more seeds), human judge calibration, H3 (distance sweep).
 
 ## Open questions
 

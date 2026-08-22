@@ -25,3 +25,22 @@ The underlying hazard is real: the sweep doesn't guard against a repo already be
 **Three papers I could not fetch**, with notes explicitly flagged rather than silently thin — following your existing `fu2013meaning` precedent: SOLVENT (open access but Cloudflare-blocked at ACM; written from the full publisher abstract), Chan et al. 2011 (paywalled, *no abstract available anywhere* — marked inference-only), and Fauconnier & Turner (URL serves a 3.8 KB landing stub; written from established secondary understanding). Chan 2011 and `fu2013meaning` sit behind the same ASME paywall and both feed H3 — worth pulling together with institutional access before H3's design is finalized.
 
 I skipped `/promote-moc`: both MoCs already exist and cover all 14 concepts, and I added sources rather than new concepts, so nothing new could have ripened.
+## No cluster is ripe — nothing promoted
+
+**Inventory:** 14 concepts, 2 existing MoCs. 13 of the 14 concepts are already members of a MoC; only `concepts/homogenization` is unmapped.
+
+**Candidate clusters, by shared tags:**
+
+| Cluster | Concepts | Overlap with existing MoC | Verdict |
+|---|---|---|---|
+| `q2-integrating` | 8 | 8/8 in `mocs/integrating-the-seed` | **Decline** — that MoC *is* this cluster |
+| `q1-choosing` | 5 | 5/5 in `mocs/choosing-the-seed` | **Decline** — same |
+| `prompt-strategy` | 4 (`abstract-then-reinstantiate`, `analogical-prompting`, `conceptual-blending`, `seed-brief-isolation`) | 4/4 in `integrating-the-seed` | **Decline** — under 5, and fully subsumed; it's that MoC's "integration templates" section |
+| `evaluation` | 2 (`transfer-depth-ladder`, `novelty-usefulness-tradeoff`), 3 if `homogenization` is folded in | 2/3 mapped across both MoCs | **Decline** — 3 concepts is not a cluster |
+| unmapped | 1 (`homogenization`) | — | **Decline** — singleton |
+
+The one construction that clears 5 would be an "evaluation / measurement" MoC pulling `homogenization` + `novelty-usefulness-tradeoff` + `transfer-depth-ladder` + `directed-diversity` + `verbalized-sampling`. It technically passes the majority-overlap test (no *single* existing MoC holds 3 of those 5), but it fails the coherence half: `directed-diversity` is tagged `q1-choosing/method` and `verbalized-sampling` `q2-integrating/method` — they'd be conscripted on the thin grounds that both contribute metric vocabulary, and both already have a substantive home where their actual job is described. That's manufacturing a MoC to have one, which the skill explicitly says not to do.
+
+**When this becomes ripe:** the genuine gap is evaluation, currently split across the two MoCs' "Evaluation" sections. Once H2/H3 run and the judge-calibration, `distinct_k`/`utility_k`, and DAT/embedding-metric threads become their own concepts, `evaluation` reaches 5+ on its own merits and a `mocs/measuring-transfer.md` will be worth writing. Two or three more concepts away.
+
+No files written, no commit made.

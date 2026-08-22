@@ -12,6 +12,8 @@ and `/new-experiment`.
 
 - `docs/research-plan.md` — problem, hypotheses H1–H6, design space, phases.
 - `docs/decisions/0001-scope-and-framing.md` — scope ADR.
+- `docs/decisions/0002-default-integration-strategy.md` — brief template, k=5, no persona.
+- `docs/method.md` — the method v0.1 (evidence-tagged); `skill/cross-pollinate/` — install-ready skill.
 
 ## Maps of Content
 
@@ -22,7 +24,7 @@ and `/new-experiment`.
 ## Active experiments
 
 - ~~H1~~ done: `experiments/2026-08-22-h1-llm-random-topic-skew/` — model-chosen "random topics" collapse (Sonnet 71% duplicates); sampler is necessary
-- `experiments/2026-08-22-h2-integration-bakeoff/` — H2/H6: naive vs persona vs abstract-reinstantiate (±isolated brief) on the dev set
+- ~~H2/H6~~ done: `experiments/2026-08-22-h2-integration-bakeoff/` — abstract-reinstantiate-brief 3.29 depth vs naive 2.12 (13/1, p=0.002); persona ≈ naive; 94% rediscovery
 
 ## Candidate reading (uncurated)
 

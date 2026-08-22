@@ -44,3 +44,4 @@ skills; read by `/lint`.
 2026-08-22 03:06 curate 2026-08-22-llm-homogenization-and-diversity-metrics.md ingested=8 declined=0 dup=4
 2026-08-22 03:15 curate 2026-08-22-cross-domain-prompting-techniques.md ingested=6 declined=1 dup=5
 2026-08-22 03:15 curate 2026-08-22-random-topic-sampling-and-analogical-distance.md ingested=4 declined=2 dup=6
+2026-08-22 03:41 experiment done h2-integration-bakeoff; method.md v0.1; ADR 0002

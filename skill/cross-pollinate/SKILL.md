@@ -14,12 +14,13 @@ chooses; the model integrates.
 
 - `<problem>` — free text, or `@path` to a file. Should include what has
   been tried and why it failed; the abstraction step needs that.
-- `--k N` — number of seeds (default 3).
+- `--k N` — number of seeds (default 5; the foreign-and-useful rate is ~6 % per seed, so fewer is a lottery).
 - `--band lo,hi` — distance-percentile band from the problem (default
   `0.5,0.9`, "far but not too far").
 - `--level` — `topic` (default), `subfield`, or `keyword`.
-- `--template` — `abstract-reinstantiate` (default) or
-  `abstract-reinstantiate-brief` (problem-blind brief first, then map).
+- `--template` — `abstract-reinstantiate-brief` (default: problem-blind brief
+  first, then map; measured best) or `abstract-reinstantiate` (one call).
+  Never `persona` — measured no better than naive injection.
 
 ## Steps
 
@@ -29,7 +30,9 @@ chooses; the model integrates.
    uv run xpol sample -k <N> --problem @problem.txt --band <lo,hi> --level <level> --json
    ```
    Record the printed RNG seed in whatever log the calling project keeps —
-   it reproduces the draw.
+   it reproduces the draw. If a generation is refused by the API safety
+   classifier (medical / toxicology seeds trigger it ~5 % of the time),
+   draw one replacement seed with a new RNG seed and say so.
 2. **Render** one prompt per seed:
    ```sh
    uv run xpol prompt --problem @problem.txt --seed <rng> -k <N> --template <template>
@@ -42,8 +45,10 @@ chooses; the model integrates.
 4. **Select.** Read the critique sections. Report to the user: for each
    seed, the mechanism named, the transfer-depth rung you would assign
    (0 none · 1 vocabulary · 2 metaphor · 3 mechanism · 4 method), and the
-   cheapest experiment that would test it. Recommend one; say plainly when
-   none transferred — two-thirds of random seeds are expected to be duds.
+   cheapest experiment that would test it, and whether the destination is
+   a method the field already has (it usually is — ~94 % in the bake-off;
+   say so rather than oversell). Recommend one; say plainly when none
+   transferred.
 
 ## What this skill does NOT do
 

@@ -1,0 +1,25 @@
+{
+ "pid": "clay-vessel-bending",
+ "strategy": "naive",
+ "si": 1,
+ "seed": {
+  "level": "topic",
+  "name": "HIV/AIDS Research and Interventions",
+  "path": "Health Sciences > Medicine > Infectious Diseases > HIV/AIDS Research and Interventions",
+  "description": "This cluster of papers focuses on the prevention, treatment, and epidemiology of HIV/AIDS. It covers topics such as antiretroviral therapy, preexposure prophylaxis, stigma and discrimination, viral load, mother-to-child transmission, adherence to medication, mortality rates, and health-related stigma.",
+  "keywords": [
+   "Antiretroviral Therapy",
+   "HIV Transmission",
+   "Preexposure Prophylaxis",
+   "Stigma and Discrimination",
+   "Viral Load",
+   "Mother-to-Child Transmission"
+  ],
+  "distance": 0.4983,
+  "distance_pct": 0.503,
+  "stratum": "Health Sciences"
+ },
+ "prompt": "Thin-walled ceramic vessels are 3D-printed from clay with a wall profile\nderived from an audio waveform, so the radius varies irregularly with\nheight. Finite-element analysis shows the vessels fail in bending at about\none-third of their height under self-weight plus a small lateral load,\nbefore the clay has dried. Want ways to raise the collapse load without\nchanging the profile's visible shape or the material.\n\nIncorporate ideas from HIV/AIDS Research and Interventions (Health Sciences > Medicine > Infectious Diseases > HIV/AIDS Research and Interventions) into your approach.\n",
+ "proposal": null,
+ "refused": "API Error: Sonnet 5 can't help with this. Start a new session to continue.\n\nLearn more: https://www.anthropic.com/legal/aup\n\nDetails: `[bio]`\n\nRequest ID: req_011CeH459QC83uo7WGPVpDpW\n"
+}

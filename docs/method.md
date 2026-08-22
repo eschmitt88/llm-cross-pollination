@@ -1,7 +1,7 @@
 ---
 kind: method
 name: cross-pollination-method
-status: draft            # draft until H2 fills §4
+status: v0.1
 added: "2026-08-22"
 updated: "2026-08-22"
 ---
@@ -77,23 +77,64 @@ field have produced this without the seed?). Generator and judge are
 different models (Sonnet 5 / Opus 5) to dampen self-preference
 ([[zhang2025noveltybench]] on judge/metric pitfalls).
 
-## 4. Which strategy wins — [H2 pending]
+## 4. Which strategy wins — [H2 ✓, H6 ✓(directional)]
 
-_Filled in from `experiments/2026-08-22-h2-integration-bakeoff/` when the
-run completes._
+Same 18 seeds (3 per dev problem), four strategies, Opus 5 judge
+(`experiments/2026-08-22-h2-integration-bakeoff/`):
+
+| strategy | transfer depth (0–4) | ≥ mechanism | usefulness | paired vs naive |
+|---|---|---|---|---|
+| naive "incorporate ideas from X" | 2.12 | 41% | 2.24 | — |
+| persona "you are an X expert" | 2.29 | 41% | 2.24 | 5 wins / 4 losses (n.s.) |
+| abstract-reinstantiate | 2.94 | 76% | 2.18 | 11 / 1, p=0.006 |
+| **abstract-reinstantiate-brief** | **3.29** | **88%** | 2.29 | **13 / 1, p=0.002** |
+
+Three things the numbers say:
+
+1. **Structure beats speaker.** Forcing abstraction + correspondence
+   tables is what transfers a mechanism; giving the model a persona does
+   nothing (the popular move, and it is worthless here).
+2. **Problem-blind briefs help** (+0.35 depth, 7/1 over the joint-context
+   version, p=0.07): a context that has seen the problem retrieves only the
+   parts of the seed that already look like the problem.
+3. **Transfer ≠ novelty.** Usefulness is flat across every arm (~2.2/4,
+   same as a no-seed "be unconventional" prompt), and the judge marks 94%
+   of proposals — including the method-level ones — as reachable by the
+   home field: the seed usually leads, by a foreign path, to a method the
+   field already has (CVaR → distributionally robust optimisation; plant
+   stress priming → curriculum/adaptive regularisation). Only 4 of 72
+   seeded outputs were judged both foreign *and* useful. Hard-constraint
+   physical design problems (fixed shape, fixed material) transferred
+   worst; modelling/algorithm problems best.
+
+So the method as it stands reliably produces **foreign derivations of
+mostly-known methods**, at a 5–10% rate of genuinely new-to-the-field
+ideas, with the user as the filter. That is useful (a derivation you did
+not know is a method you did not know) but it is not yet a novelty engine;
+the next levers are more seeds per problem (H5) and the distance band (H3).
+
+Side cost: 4/72 seeded generations were refused outright by the API's
+bio-safety classifier because the *seed* was medical/toxicological
+(HIV/AIDS, pesticide toxicity). The sampler resamples on refusal.
 
 ## 5. Recommended procedure (v0.1)
 
 1. Write the problem in 3–8 sentences, including what has been tried and
    why it failed — the abstraction step needs that.
-2. `xpol sample -k 3 --problem @problem.txt` → three seeds, home field
-   excluded, mid-far band. Record the printed RNG seed.
-3. For each seed, `xpol prompt --problem @problem.txt --seed <rng>
-   --template <winner from §4>` and run the rendered prompt.
-4. Read the *critique* sections first: they tell you which of the three
-   transfers is worth an experiment. Keep one; discard the rest without
-   guilt — two-thirds of random seeds are expected to be duds; the sampler
-   is cheap, the judgment is yours.
+2. `xpol sample -k 5 --problem @problem.txt` → five seeds (not three:
+   the foreign-and-useful rate is ~6% per seed), home field excluded,
+   mid-far band. Record the printed RNG seed. If a seed is medical or
+   toxicological and you are on a model with a bio classifier, resample.
+3. For each seed, in a **fresh context that has not seen the problem**,
+   run `prompts/brief.md` → a one-page mechanisms brief. Then
+   `xpol prompt --problem @problem.txt --seed <rng> --template
+   abstract-reinstantiate-brief` with the brief, in the problem context.
+4. Read the *correspondence tables and critiques* first. Expect most
+   proposals to land on something your field already has — that is still
+   the fastest way to learn about a method you did not know. Keep the one
+   whose critique names a cheap experiment; discard the rest without guilt.
+5. Do not use persona prompting for this; it measured as no better than
+   pasting the seed's name.
 
 ## 6. Known limitations
 
