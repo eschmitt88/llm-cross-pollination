@@ -3,7 +3,7 @@ kind: method
 name: cross-pollination-method
 status: v0.1
 added: "2026-08-22"
-updated: "2026-08-22"
+updated: "2026-09-03"
 ---
 
 # The cross-pollination method (v0.1)
@@ -109,9 +109,21 @@ Three things the numbers say:
 
 So the method as it stands reliably produces **foreign derivations of
 mostly-known methods**, at a 5–10% rate of genuinely new-to-the-field
-ideas, with the user as the filter. That is useful (a derivation you did
-not know is a method you did not know) but it is not yet a novelty engine;
-the next levers are more seeds per problem (H5) and the distance band (H3).
+ideas, with the user as the filter.
+
+**Accepted framing (user, 2026-09-03): a low per-seed hit rate is expected
+and fine.** This matches the prior literature — far-field inspiration hits
+rarely everywhere ([[fu2013meaning]]; [[uzzi2013atypical]]: atypical
+combinations are rare tails on conventional cores, and that tail is where
+impact lives) — and it reframes what to optimise: not hit rate per seed but
+**cost per shot and quality of the filter**. Seeds are free and generations
+are cheap; the scarce resource is user attention. Consequences: k goes up
+rather than the band getting cleverer (H5 is the priority experiment), the
+judge's job shifts from scoring to *pre-filtering* what reaches the user,
+and judge calibration becomes the gating risk — with a rare-hit regime, a
+judge that false-negatives the hits destroys the whole value. Rediscoveries
+are not waste either: a correspondence table onto a method you did not know
+is a tutorial for it.
 
 Side cost: 4/72 seeded generations were refused outright by the API's
 bio-safety classifier because the *seed* was medical/toxicological
